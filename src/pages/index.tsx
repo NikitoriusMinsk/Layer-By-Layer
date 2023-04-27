@@ -16,7 +16,7 @@ const Home: NextPage = () => {
 					href="/favicon.ico"
 				/>
 			</Head>
-			<main>{t("test")}</main>
+			<main></main>
 		</>
 	);
 };
