@@ -8,5 +8,6 @@ module.exports = {
         locales: ["en", "ru"],
         defaultLocale: "ru",
     },
+    ns: ['common', 'footer', 'header'],
     localePath: path.resolve("./public/locales"),
 };
