@@ -1,9 +1,12 @@
 import styles from "@/styles/pages/Home.module.scss";
-import { type NextPage } from "next";
+import { GetStaticProps, type NextPage } from "next";
 import Head from "next/head";
-import Link from "next/link";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const Home: NextPage = () => {
+	const { t } = useTranslation();
+
 	return (
 		<>
 			<Head>
@@ -13,9 +16,18 @@ const Home: NextPage = () => {
 					href="/favicon.ico"
 				/>
 			</Head>
-			<main></main>
+			<main>{t("test")}</main>
 		</>
 	);
+};
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+	return {
+		props: {
+			...(await serverSideTranslations(locale ?? "ru", ["common"])),
+			// Will be passed to the page component as props
+		},
+	};
 };
 
 export default Home;
