@@ -16,7 +16,7 @@ const Home: NextPage = () => {
 					href="/favicon.ico"
 				/>
 			</Head>
-			<main></main>
+			<div className={styles.container}>WAH!</div>
 		</>
 	);
 };

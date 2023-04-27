@@ -1,0 +1,54 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 60px 250px 20px 250px;
+	gap: 50px;
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		gap: 24px;
+
+		.socials,
+		.hours {
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+
+			> div {
+				display: flex;
+				flex-direction: row;
+				gap: 12px;
+			}
+		}
+	}
+
+	.links {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		flex: 1.5;
+		gap: 12px;
+
+		a {
+			width: calc(33% - 6px);
+		}
+	}
+
+	.copyright {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+	}
+}
+
+.socialBubble {
+	height: 48px;
+	width: 48px;
+	overflow: hidden;
+	border-radius: 100%;
+	background-color: #ccc;
+}

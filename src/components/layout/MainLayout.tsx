@@ -1,15 +1,16 @@
 import React, { ReactElement } from "react";
-import Header from "@/components/layout/Header";
-import Footer from "@/components/layout/Footer";
+import Header from "@components/layout/Header";
+import Footer from "@components/layout/Footer";
+import styles from "@styles/components/layout/MainLayout.module.scss";
 
 const MainLayout: React.FC<{ children?: ReactElement | ReactElement[] }> = (props) => {
 	const { children } = props;
 	return (
-		<div>
+		<>
 			<Header />
-			{children}
+			<main className={styles.container}>{children}</main>
 			<Footer />
-		</div>
+		</>
 	);
 };
 
