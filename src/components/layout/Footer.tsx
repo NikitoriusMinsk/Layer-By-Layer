@@ -4,13 +4,13 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 
 const Footer: React.FC = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation("footer");
 
 	return (
 		<footer className={styles.container}>
 			<div className={styles.info}>
 				<Image
-					src={"images/logo.svg"}
+					src={"/images/logo.svg"}
 					height={50}
 					width={150}
 					alt={t("logo_alt")}
@@ -22,27 +22,27 @@ const Footer: React.FC = () => {
 						<SocialBubble
 							alt="Facebook"
 							href="facebook.com"
-							src="images/social/facebook.svg"
+							src="/images/social/facebook.svg"
 						/>
 						<SocialBubble
 							alt="Instagram"
 							href="instagram.com"
-							src="images/social/instagram.svg"
+							src="/images/social/instagram.svg"
 						/>
 						<SocialBubble
 							alt="Twitter"
 							href="twitter.com"
-							src="images/social/twitter.svg"
+							src="/images/social/twitter.svg"
 						/>
 						<SocialBubble
 							alt="Telegram"
 							href="t.me"
-							src="images/social/telegram.svg"
+							src="/images/social/telegram.svg"
 						/>
 						<SocialBubble
 							alt="Email"
 							href="mailto:lbl@lbl.com"
-							src="images/social/email.svg"
+							src="/images/social/email.svg"
 						/>
 					</div>
 				</div>

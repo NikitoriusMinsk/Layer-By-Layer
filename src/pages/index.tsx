@@ -3,10 +3,9 @@ import { GetStaticProps, type NextPage } from "next";
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import Hero from "@/components/ui/Hero";
 
 const Home: NextPage = () => {
-	const { t } = useTranslation();
-
 	return (
 		<>
 			<Head>
@@ -16,7 +15,9 @@ const Home: NextPage = () => {
 					href="/favicon.ico"
 				/>
 			</Head>
-			<div className={styles.container}>WAH!</div>
+			<div className={styles.container}>
+				<Hero />
+			</div>
 		</>
 	);
 };

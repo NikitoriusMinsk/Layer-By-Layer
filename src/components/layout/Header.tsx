@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 
 const Header: React.FC = () => {
-	const { t } = useTranslation();
+	const { t } = useTranslation("header");
 
 	return (
 		<header className={styles.container}>
 			<Image
-				src={"images/logo.svg"}
+				src={"/images/logo.svg"}
 				height={50}
 				width={150}
 				alt={t("logo_alt")}
