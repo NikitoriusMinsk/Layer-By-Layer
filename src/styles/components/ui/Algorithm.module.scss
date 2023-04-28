@@ -1,0 +1,84 @@
+@use "/src/styles/variables.scss" as variables;
+
+.container {
+	margin: 0 variables.$sideMargin;
+	padding: 100px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+
+	> div {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		// border magic
+		// https://kovart.github.io/dashed-border-generator/
+		// negative stroke-dash-offset moves the start point to the right
+		.panel {
+			&:nth-child(1) {
+				.image::after {
+					position: absolute;
+					content: "";
+					height: 100%;
+					width: 100%;
+					background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='150%2c 400' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
+				}
+			}
+
+			&:nth-child(3) {
+				.image::after {
+					position: absolute;
+					content: "";
+					height: 100%;
+					width: 100%;
+					background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='300%2c 400' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
+				}
+			}
+
+			&:nth-child(5) {
+				.image::after {
+					position: absolute;
+					content: "";
+					height: 100%;
+					width: 100%;
+					background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='450%2c 400' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
+				}
+			}
+
+			&:nth-child(7) {
+				.image::after {
+					position: absolute;
+					content: "";
+					height: 100%;
+					width: 100%;
+					background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='600%2c 0' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
+				}
+			}
+		}
+
+		.spacer {
+			width: 100px;
+			height: 1px;
+			background-color: #ccc;
+			margin-bottom: 70px;
+		}
+	}
+}
+
+.panel {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+
+	.image {
+		position: relative;
+		display: flex;
+		height: 150px;
+		width: 150px;
+		> img {
+			border: 2px solid #ccc;
+		}
+	}
+}

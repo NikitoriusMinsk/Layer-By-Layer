@@ -7,6 +7,7 @@ import About from "@/components/ui/About";
 import FDMPrinting from "@/components/ui/FDMPrinting";
 import Services from "@/components/ui/Services";
 import Sample from "@/components/ui/Sample";
+import Algorithm from "@/components/ui/Algorithm";
 
 const Home: NextPage = () => {
 	return (
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
 				<FDMPrinting />
 				<Services />
 				<Sample />
+				<Algorithm />
 			</div>
 		</>
 	);
