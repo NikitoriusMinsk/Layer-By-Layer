@@ -1,13 +1,14 @@
-import styles from "@/styles/pages/Home.module.scss";
+import styles from "@styles/pages/Home.module.scss";
 import { GetStaticProps, type NextPage } from "next";
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import Hero from "@/components/ui/Hero";
-import About from "@/components/ui/About";
-import FDMPrinting from "@/components/ui/FDMPrinting";
-import Services from "@/components/ui/Services";
-import Sample from "@/components/ui/Sample";
-import Algorithm from "@/components/ui/Algorithm";
+import Hero from "@components/ui/Hero";
+import About from "@components/ui/About";
+import FDMPrinting from "@components/ui/FDMPrinting";
+import Services from "@components/ui/Services";
+import Sample from "@components/ui/Sample";
+import Algorithm from "@components/ui/Algorithm";
+import Contact from "@components/ui/Contact";
 
 const Home: NextPage = () => {
 	return (
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
 				<Services />
 				<Sample />
 				<Algorithm />
+				<Contact />
 			</div>
 		</>
 	);

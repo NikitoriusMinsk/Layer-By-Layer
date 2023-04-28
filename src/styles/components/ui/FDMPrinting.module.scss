@@ -5,6 +5,10 @@
 	flex-direction: row;
 	height: 50vh;
 
+	.image {
+		background-color: #ccc;
+	}
+
 	.image,
 	.info {
 		position: relative;

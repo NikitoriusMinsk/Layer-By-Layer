@@ -1,0 +1,91 @@
+@use "/src/styles/variables.scss" as variables;
+
+.container {
+	position: relative;
+	padding: 120px variables.$sideMargin;
+	background-color: #ccc;
+	display: flex;
+
+	> img {
+		z-index: 1;
+	}
+
+	> form {
+		z-index: 2;
+		padding: 24px;
+		background-color: white;
+		border-radius: 8px;
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		max-width: 700px;
+
+		> span {
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+			padding-bottom: 24px;
+			border-bottom: 1px solid #ccc;
+		}
+
+		> div {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 12px;
+			row-gap: 24px;
+
+			input {
+				padding: 6px;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+			}
+
+			input[data-name="name"],
+			input[data-name="phone"],
+			input[data-name="email"] {
+				flex: 1;
+			}
+
+			input[data-name="submit"] {
+				cursor: pointer;
+				background-color: transparent;
+				border: 1px solid #ccc;
+				border-radius: 8px;
+				flex: 1;
+			}
+
+			input[data-name="comment"] {
+				width: 100%;
+			}
+
+			label[data-name="file"] {
+				position: relative;
+				display: flex;
+				cursor: pointer;
+				align-items: center;
+				gap: 12px;
+				flex: 0.5;
+
+				> img {
+					background-color: #ccc;
+				}
+
+				&:before {
+					content: attr(data-count);
+					position: absolute;
+					top: 0;
+					left: 0;
+					padding: 4px;
+					background-color: white;
+					border-radius: 4px;
+					font-size: 12px;
+				}
+
+				input {
+					display: none;
+				}
+			}
+		}
+	}
+}
