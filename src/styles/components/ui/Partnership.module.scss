@@ -1,0 +1,41 @@
+@use "/src/styles/variables.scss" as variables;
+
+.container {
+	padding: 120px variables.$sideMargin;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	> div {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: 18px;
+
+			li {
+				list-style-type: none;
+				position: relative;
+
+				&::before {
+					$size: 18px;
+					content: "";
+					position: absolute;
+					height: $size;
+					width: $size;
+					border-radius: 4px;
+					background-color: #ccc;
+					left: -30px;
+					top: calc(50% - $size/2);
+				}
+			}
+		}
+	}
+
+	> img {
+		background-color: #ccc;
+	}
+}
