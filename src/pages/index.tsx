@@ -6,6 +6,7 @@ import Hero from "@/components/ui/Hero";
 import About from "@/components/ui/About";
 import FDMPrinting from "@/components/ui/FDMPrinting";
 import Services from "@/components/ui/Services";
+import Sample from "@/components/ui/Sample";
 
 const Home: NextPage = () => {
 	return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
 				<About />
 				<FDMPrinting />
 				<Services />
+				<Sample />
 			</div>
 		</>
 	);
