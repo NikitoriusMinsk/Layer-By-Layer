@@ -14,8 +14,8 @@ const Hero: React.FC = () => {
 				alt=""
 			/>
 			<div>
-				<h2>{t("hero.heading")}</h2>
-				<span>{t("hero.text")}</span>
+				<h1>{t("hero.heading")}</h1>
+				<text>{t("hero.text")}</text>
 				<div className={styles.buttons}>
 					<button>{t("hero.quote")}</button>
 					<button>{t("hero.contact")}</button>

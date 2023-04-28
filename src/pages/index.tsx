@@ -4,6 +4,7 @@ import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Hero from "@/components/ui/Hero";
+import About from "@/components/ui/About";
 
 const Home: NextPage = () => {
 	return (
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
 			</Head>
 			<div className={styles.container}>
 				<Hero />
+				<About />
 			</div>
 		</>
 	);
