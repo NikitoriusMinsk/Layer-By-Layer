@@ -2,10 +2,10 @@ import styles from "@/styles/pages/Home.module.scss";
 import { GetStaticProps, type NextPage } from "next";
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
 import Hero from "@/components/ui/Hero";
 import About from "@/components/ui/About";
 import FDMPrinting from "@/components/ui/FDMPrinting";
+import Services from "@/components/ui/Services";
 
 const Home: NextPage = () => {
 	return (
@@ -21,6 +21,7 @@ const Home: NextPage = () => {
 				<Hero />
 				<About />
 				<FDMPrinting />
+				<Services />
 			</div>
 		</>
 	);
@@ -32,6 +33,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 			...(await serverSideTranslations(locale ?? "ru", ["common"])),
 			// Will be passed to the page component as props
 		},
+		revalidate: 600,
 	};
 };
 
