@@ -5,6 +5,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Hero from "@/components/ui/Hero";
 import About from "@/components/ui/About";
+import FDMPrinting from "@/components/ui/FDMPrinting";
 
 const Home: NextPage = () => {
 	return (
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
 			<div className={styles.container}>
 				<Hero />
 				<About />
+				<FDMPrinting />
 			</div>
 		</>
 	);
