@@ -21,7 +21,7 @@ const Header: React.FC = () => {
 				<a href="#sample">{t("sample")}</a>
 				<a href="#algorithm">{t("algorithm")}</a>
 				<a href="#order">{t("order")}</a>
-				<a href="#contacts">{t("contacts")}</a>
+				<a href="#contacts">{t("contact")}</a>
 				<a href="#partnership">{t("partnership")}</a>
 			</nav>
 		</header>

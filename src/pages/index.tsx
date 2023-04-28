@@ -38,7 +38,11 @@ const Home: NextPage = () => {
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
 	return {
 		props: {
-			...(await serverSideTranslations(locale ?? "ru", ["common"])),
+			...(await serverSideTranslations(locale ?? "ru", [
+				"common",
+				"header",
+				"footer",
+			])),
 			// Will be passed to the page component as props
 		},
 		revalidate: 600,

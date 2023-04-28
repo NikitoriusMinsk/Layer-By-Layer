@@ -62,6 +62,7 @@ const Contact: React.FC = () => {
 					<input
 						type="submit"
 						data-name="submit"
+						value={t("contact.submit") as string}
 					/>
 				</div>
 			</form>

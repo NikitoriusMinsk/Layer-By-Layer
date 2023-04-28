@@ -1,3 +1,107 @@
 {
-	"test": "EN"
+	"hero": {
+		"heading": "heading",
+		"text": "text",
+		"quote": "quote",
+		"contact": "contact"
+	},
+	"about": {
+		"heading": "heading",
+		"1": {
+			"alt": "alt",
+			"title": "title",
+			"text": "text"
+		},
+		"2": {
+			"alt": "alt",
+			"title": "title",
+			"text": "text"
+		},
+		"3": {
+			"alt": "alt",
+			"title": "title",
+			"text": "text"
+		}
+	},
+	"fdm_printing": {
+		"alt": "alt",
+		"heading": "heading",
+		"text": "text",
+		"button": "button"
+	},
+	"services": {
+		"heading": "heading",
+		"1": {
+			"alt": "alt",
+			"text": "text",
+			"title": "title"
+		},
+		"2": {
+			"alt": "alt",
+			"text": "text",
+			"title": "title"
+		},
+		"3": {
+			"alt": "alt",
+			"text": "text",
+			"title": "title"
+		}
+	},
+	"sample": {
+		"heading": "heading",
+		"text": "text",
+		"button": "button"
+	},
+	"algorithm": {
+		"heading": "heading",
+		"1": {
+			"alt": "alt",
+			"text": "text",
+			"title": "title"
+		},
+		"2": {
+			"alt": "alt",
+			"text": "text",
+			"title": "title"
+		},
+		"3": {
+			"alt": "alt",
+			"text": "text",
+			"title": "title"
+		},
+		"4": {
+			"alt": "alt",
+			"text": "text",
+			"title": "title"
+		}
+	},
+	"partnership": {
+		"heading": {
+			"1": "heading",
+			"2": "heading"
+		},
+		"points": {
+			"1": "point",
+			"2": "point",
+			"3": "point",
+			"4": "point"
+		},
+		"text": "text",
+		"alt": "alt"
+	},
+	"contact": {
+		"heading": "heading",
+		"text": "text",
+		"placeholder": {
+			"name": "name",
+			"phone": "phone",
+			"email": "email",
+			"comment": "comment"
+		},
+		"upload": {
+			"alt": "alt",
+			"text": "text"
+		},
+		"submit": "submit"
+	}
 }
