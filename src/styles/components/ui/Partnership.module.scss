@@ -3,6 +3,11 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	gap: 48px;
+
+	> img {
+		background-color: #ccc;
+	}
 
 	> div {
 		display: flex;
@@ -30,6 +35,16 @@
 					top: calc(50% - $size/2);
 				}
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+
+		> img {
+			width: 100%;
 		}
 	}
 }

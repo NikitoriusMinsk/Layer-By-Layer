@@ -81,3 +81,18 @@
 		}
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.container {
+		> div {
+			flex-direction: column;
+			gap: 24px;
+
+			.spacer {
+				margin-bottom: 0;
+				width: 1px;
+				height: 100px;
+			}
+		}
+	}
+}

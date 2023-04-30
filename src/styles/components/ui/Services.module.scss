@@ -27,3 +27,11 @@
 		background-color: #ccc;
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.container {
+		> div {
+			flex-direction: column;
+		}
+	}
+}

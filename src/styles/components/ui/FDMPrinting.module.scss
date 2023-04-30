@@ -3,6 +3,10 @@
 	flex-direction: row;
 	height: 50vh;
 
+	.image {
+		background-color: #ccc;
+	}
+
 	.image,
 	.info {
 		position: relative;
@@ -24,5 +28,12 @@
 			background-color: transparent;
 			border: 1px solid #ccc;
 		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		height: 100vh;
 	}
 }
