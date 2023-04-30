@@ -40,12 +40,13 @@ const Panel: React.FC<{ src: string; alt: string; title: string; text: string }>
 
 	return (
 		<div className={styles.panel}>
-			<Image
-				src={src}
-				alt={alt}
-				height={128}
-				width={128}
-			/>
+			<div className={styles.image}>
+				<Image
+					src={src}
+					alt={alt}
+					fill
+				/>
+			</div>
 			<h3>{title}</h3>
 			<text>{text}</text>
 		</div>
