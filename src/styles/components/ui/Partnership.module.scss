@@ -1,7 +1,5 @@
-@use "/src/styles/variables.scss" as variables;
-
 .container {
-	padding: 120px variables.$sideMargin;
+	padding: 120px var(--side-margin);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

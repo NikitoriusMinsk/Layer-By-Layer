@@ -1,8 +1,6 @@
-@use "/src/styles/variables.scss" as variables;
-
 .container {
 	position: relative;
-	padding: 120px variables.$sideMargin;
+	padding: 120px var(--side-margin);
 	background-color: #ccc;
 	display: flex;
 

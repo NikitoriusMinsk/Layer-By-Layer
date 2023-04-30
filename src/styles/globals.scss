@@ -22,3 +22,13 @@ h4,
 h5 {
 	margin: 0;
 }
+
+:root {
+	--side-margin: 20%;
+}
+
+@media screen and (max-width: 1024px) {
+	:root {
+		--side-margin: 10%;
+	}
+}
