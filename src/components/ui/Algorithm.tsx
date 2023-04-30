@@ -7,7 +7,10 @@ const Algorithm: React.FC = () => {
 	const { t } = useTranslation("common");
 
 	return (
-		<div className={styles.container}>
+		<div
+			className={styles.container}
+			id="algorithm"
+		>
 			<h2>{t("algorithm.heading")}</h2>
 			<div>
 				<Panel

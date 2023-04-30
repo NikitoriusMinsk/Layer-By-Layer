@@ -7,7 +7,10 @@ const Contact: React.FC = () => {
 	const { t } = useTranslation("common");
 
 	return (
-		<div className={styles.container}>
+		<div
+			className={styles.container}
+			id="order"
+		>
 			<Image
 				src={"/images/contact.png"}
 				alt=""

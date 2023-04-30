@@ -7,7 +7,10 @@ const About: React.FC = () => {
 	const { t } = useTranslation("common");
 
 	return (
-		<div className={styles.container}>
+		<div
+			className={styles.container}
+			id="about"
+		>
 			<h2>{t("about.heading")}</h2>
 			<div>
 				<Panel

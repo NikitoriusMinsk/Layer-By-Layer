@@ -7,7 +7,10 @@ const FDMPrinting: React.FC = () => {
 	const { t } = useTranslation("common");
 
 	return (
-		<div className={styles.container}>
+		<div
+			className={styles.container}
+			id="printing"
+		>
 			<div className={styles.image}>
 				<Image
 					src={"/images/FDMPrinting.png"}

@@ -7,7 +7,10 @@ const Sample: React.FC = () => {
 	const { t } = useTranslation("common");
 
 	return (
-		<div className={styles.container}>
+		<div
+			className={styles.container}
+			id="sample"
+		>
 			<Image
 				src={"/images/sample.png"}
 				alt=""

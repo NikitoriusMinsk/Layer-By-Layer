@@ -7,7 +7,10 @@ const Partnership: React.FC = () => {
 	const { t } = useTranslation("common");
 
 	return (
-		<div className={styles.container}>
+		<div
+			className={styles.container}
+			id="partnership"
+		>
 			<div>
 				<h2>{t("partnership.heading.1")}</h2>
 				<ul>
