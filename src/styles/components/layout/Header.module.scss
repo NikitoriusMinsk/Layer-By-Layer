@@ -13,6 +13,13 @@
 	.logo {
 		height: 50px;
 		width: 150px;
+		display: flex;
+		align-items: center;
+
+		img {
+			object-fit: contain;
+			object-position: left center;
+		}
 	}
 
 	nav {
