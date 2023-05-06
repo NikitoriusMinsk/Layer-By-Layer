@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@styles/components/layout/Footer.module.scss";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import scrollToAnchor from "src/utils/scrollToAnchor";
 
 const Footer: React.FC = () => {
 	const { t } = useTranslation("footer");
@@ -53,14 +54,54 @@ const Footer: React.FC = () => {
 				<span>+658 75 49-82-147</span>
 			</div>
 			<div className={styles.links}>
-				<a href="#about">{t("about")}</a>
-				<a href="#printing">{t("fdm_printing")}</a>
-				<a href="#services">{t("services")}</a>
-				<a href="#sample">{t("sample")}</a>
-				<a href="#algorithm">{t("algorithm")}</a>
-				<a href="#order">{t("order")}</a>
-				<a href="#contacts">{t("contact")}</a>
-				<a href="#partnership">{t("partnership")}</a>
+				<a
+					href="#about"
+					onClick={scrollToAnchor}
+				>
+					{t("about")}
+				</a>
+				<a
+					href="#printing"
+					onClick={scrollToAnchor}
+				>
+					{t("fdm_printing")}
+				</a>
+				<a
+					href="#services"
+					onClick={scrollToAnchor}
+				>
+					{t("services")}
+				</a>
+				<a
+					href="#sample"
+					onClick={scrollToAnchor}
+				>
+					{t("sample")}
+				</a>
+				<a
+					href="#algorithm"
+					onClick={scrollToAnchor}
+				>
+					{t("algorithm")}
+				</a>
+				<a
+					href="#order"
+					onClick={scrollToAnchor}
+				>
+					{t("order")}
+				</a>
+				<a
+					href="#contacts"
+					onClick={scrollToAnchor}
+				>
+					{t("contact")}
+				</a>
+				<a
+					href="#partnership"
+					onClick={scrollToAnchor}
+				>
+					{t("partnership")}
+				</a>
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d21421.90645960415!2d44.81410641647915!3d41.69570049089088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cf966877377%3A0x5982a28de6451cda!2sAvlabari!5e0!3m2!1sru!2sge!4v1682679064033!5m2!1sru!2sge"
 					style={{ border: 0 }}
