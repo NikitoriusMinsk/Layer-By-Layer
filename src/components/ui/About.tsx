@@ -14,19 +14,19 @@ const About: React.FC = () => {
 			<h2>{t("about.heading")}</h2>
 			<div>
 				<Panel
-					src="/images/about/1.png"
+					src="/images/about/1.jpg"
 					alt={t("about.1.alt")}
 					title={t("about.1.title")}
 					text={t("about.1.text")}
 				/>
 				<Panel
-					src="/images/about/2.png"
+					src="/images/about/2.jpg"
 					alt={t("about.2.alt")}
 					title={t("about.2.title")}
 					text={t("about.2.text")}
 				/>
 				<Panel
-					src="/images/about/3.png"
+					src="/images/about/3.jpg"
 					alt={t("about.3.alt")}
 					title={t("about.3.title")}
 					text={t("about.3.text")}

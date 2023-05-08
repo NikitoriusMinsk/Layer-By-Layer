@@ -12,7 +12,7 @@ const Sample: React.FC = () => {
 			id="sample"
 		>
 			<Image
-				src={"/images/sample.png"}
+				src={"/images/sample.jpg"}
 				alt=""
 				fill
 			/>
