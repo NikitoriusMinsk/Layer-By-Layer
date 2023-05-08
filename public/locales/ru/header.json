@@ -1,12 +1,12 @@
 {
 	"logo_alt": "logo_alt",
-	"about": "about",
-	"fdm_printing": "fdm_printing",
-	"services": "services",
-	"sample": "sample",
-	"algorithm": "algorithm",
-	"order": "order",
-	"contact": "contact",
-	"partnership": "partnership",
+	"about": "О нас",
+	"fdm_printing": "FDM печать",
+	"services": "Услуги",
+	"sample": "Образец",
+	"algorithm": "Алгоритм работы",
+	"order": "Связь",
+	"contact": "Связь",
+	"partnership": "Сотрудничество",
 	"burger_alt": "burger_alt"
 }

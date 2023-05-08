@@ -1,16 +1,16 @@
 {
 	"logo_alt": "logo_alt",
-	"slogan": "slogan",
+	"slogan": "Перевоплотите свои идеи в реальность с помощью нашей 3D-печати!",
 	"hours": {
-		"heading": "heading",
-		"text": "text"
+		"heading": "Время работы",
+		"text": "9:00 - 19:00"
 	},
-	"about": "about",
-	"fdm_printing": "fdm_printing",
-	"services": "services",
-	"sample": "sample",
-	"algorithm": "algorithm",
-	"order": "order",
-	"contact": "contact",
-	"partnership": "partnership"
+	"about": "О нас",
+	"fdm_printing": "FDM печать",
+	"services": "Услуги",
+	"sample": "Образец",
+	"algorithm": "Алгоритм выполнения",
+	"order": "Связь",
+	"contact": "Мы в соц. сетях",
+	"partnership": "Сотрудничество"
 }
