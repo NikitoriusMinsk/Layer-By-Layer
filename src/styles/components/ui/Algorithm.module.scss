@@ -10,7 +10,7 @@
 		flex-direction: row;
 		flex-wrap: wrap;
 		column-gap: 12px;
-		row-gap: 132px;
+		row-gap: 211px;
 
 		// border magic
 		// https://kovart.github.io/dashed-border-generator/
@@ -65,7 +65,14 @@
 
 			&:nth-child(4) {
 				&:after {
-					display: none;
+					height: 80px;
+					width: 450px;
+					right: 75%;
+					left: unset;
+					top: calc(100% + 25px);
+					background-color: transparent;
+					border-right: 1px solid var(--decorative-element-color);
+					border-bottom: 1px solid var(--decorative-element-color);
 				}
 
 				.image::after {
@@ -79,6 +86,17 @@
 			}
 
 			&:nth-child(5) {
+				&:before {
+					position: absolute;
+					content: "";
+					height: 80px;
+					width: 450px;
+					left: 27%;
+					bottom: calc(100% + 25px);
+					border-left: 1px solid var(--decorative-element-color);
+					border-top: 1px solid var(--decorative-element-color);
+				}
+
 				.image::after {
 					position: absolute;
 					content: "";
@@ -160,7 +178,7 @@
 
 @media screen and (max-width: 1024px) {
 	.container {
-		> div {
+		content {
 			.panel {
 				&:not(:last-child) {
 					&:after {
@@ -175,14 +193,40 @@
 
 @media screen and (max-width: 768px) {
 	.container {
-		> div {
+		.content {
 			flex-direction: column;
 			gap: 100px;
 			align-items: center;
 
 			.panel {
 				align-items: center;
+				width: unset;
+				flex: 1;
 
+				&:nth-child(4) {
+					&:after {
+						content: "";
+						position: absolute;
+						width: 80px;
+						height: 2px;
+						background-color: var(--decorative-element-color);
+						left: calc(50% + 40px);
+						top: 75%;
+					}
+				}
+
+				&:nth-child(5) {
+					&::before {
+						display: none;
+					}
+				}
+
+				> div {
+					align-items: center;
+					* {
+						text-align: center;
+					}
+				}
 				&:not(:last-child) {
 					&::after {
 						width: 1px;
