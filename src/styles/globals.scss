@@ -24,6 +24,19 @@ h5 {
 	margin: 0;
 }
 
+html {
+	&::-webkit-scrollbar {
+		width: 5px;
+	}
+	&::-webkit-scrollbar-track {
+		background-color: var(--accent-color);
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--primary-button-color);
+		border-radius: 3px;
+	}
+}
+
 :root {
 	--side-margin: 20%;
 	--primary-color: #fefefe;

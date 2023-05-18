@@ -2,6 +2,7 @@ import { useTranslation } from "next-i18next";
 import React from "react";
 import styles from "@styles/components/ui/About.module.scss";
 import Image from "next/image";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const About: React.FC = () => {
 	const { t } = useTranslation("common");
