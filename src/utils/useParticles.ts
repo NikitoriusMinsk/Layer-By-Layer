@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import { env } from "src/env.mjs";
 import { loadFull } from "tsparticles";
-import { Engine } from "tsparticles-engine";
+import { type Engine } from "tsparticles-engine";
 
 export default function useParticles() {
 	const particlesInit = useCallback(async (engine: Engine) => {

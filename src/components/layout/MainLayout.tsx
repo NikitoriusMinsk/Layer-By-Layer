@@ -1,4 +1,4 @@
-import React, { ReactElement } from "react";
+import React, { type ReactElement } from "react";
 import Header from "@components/layout/Header";
 import Footer from "@components/layout/Footer";
 import styles from "@styles/components/layout/MainLayout.module.scss";

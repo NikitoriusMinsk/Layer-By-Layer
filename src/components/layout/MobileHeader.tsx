@@ -1,4 +1,4 @@
-import React, { MouseEvent, useState } from "react";
+import React, { type MouseEvent, useState } from "react";
 import styles from "@styles/components/layout/Header.module.scss";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";

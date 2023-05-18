@@ -1,5 +1,5 @@
 import styles from "@styles/pages/Home.module.scss";
-import { GetStaticProps, type NextPage } from "next";
+import { type GetStaticProps, type NextPage } from "next";
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import Hero from "@components/ui/Hero";

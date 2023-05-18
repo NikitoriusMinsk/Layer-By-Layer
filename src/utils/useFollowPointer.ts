@@ -1,5 +1,5 @@
-import { SpringOptions, useSpring } from "framer-motion";
-import { RefObject, useEffect } from "react";
+import { type SpringOptions, useSpring } from "framer-motion";
+import { type RefObject, useEffect } from "react";
 
 export function useFollowPointer(ref: RefObject<HTMLElement>, options: SpringOptions) {
 	const x = useSpring(0, options);
@@ -13,9 +13,10 @@ export function useFollowPointer(ref: RefObject<HTMLElement>, options: SpringOpt
 
 			const _x = pageX - element.offsetLeft - element.offsetWidth / 2;
 			const _y = pageY - element.offsetTop - element.offsetHeight / 2;
-			requestAnimationFrame(async () => {
+			requestAnimationFrame(() => {
 				x.set(_x);
 				y.set(_y);
+				return;
 			});
 		};
 

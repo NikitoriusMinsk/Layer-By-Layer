@@ -1,4 +1,4 @@
-import { MouseEvent } from "react";
+import { type MouseEvent } from "react";
 
 export default function scrollToAnchor(e: MouseEvent<HTMLAnchorElement>) {
 	e.preventDefault();

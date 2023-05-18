@@ -31,25 +31,25 @@ const Contact: React.FC = () => {
 						type="text"
 						name="name"
 						data-name="name"
-						placeholder={t("contact.placeholder.name") as string}
+						placeholder={t<string>("contact.placeholder.name")}
 					/>
 					<input
 						type="tel"
 						name="phone"
 						data-name="phone"
-						placeholder={t("contact.placeholder.phone") as string}
+						placeholder={t<string>("contact.placeholder.phone")}
 					/>
 					<input
 						type="email"
 						name="email"
 						data-name="email"
-						placeholder={t("contact.placeholder.email") as string}
+						placeholder={t<string>("contact.placeholder.email")}
 					/>
 					<input
 						type="text"
 						name="comment"
 						data-name="comment"
-						placeholder={t("contact.placeholder.comment") as string}
+						placeholder={t<string>("contact.placeholder.comment")}
 					/>
 					<label
 						data-name="file"
@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
 					<input
 						type="submit"
 						data-name="submit"
-						value={t("contact.submit") as string}
+						value={t<string>("contact.submit")}
 					/>
 				</div>
 			</form>

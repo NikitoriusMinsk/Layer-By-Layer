@@ -1,5 +1,5 @@
 import { useTranslation } from "next-i18next";
-import React, { useCallback, useContext } from "react";
+import React from "react";
 import styles from "@styles/components/ui/Hero.module.scss";
 import Particles from "react-tsparticles";
 import { linkedCircles } from "src/utils/particleOptions";

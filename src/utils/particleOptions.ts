@@ -1,4 +1,4 @@
-import { IOptions, RecursivePartial } from "tsparticles-engine";
+import { type IOptions, type RecursivePartial } from "tsparticles-engine";
 
 export const linkedCircles: RecursivePartial<IOptions> = {
 	background: {

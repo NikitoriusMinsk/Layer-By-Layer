@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef } from "react";
-import { SpringOptions, Variants, motion } from "framer-motion";
+import { type SpringOptions, type Variants, motion } from "framer-motion";
 import { useFollowPointer } from "src/utils/useFollowPointer";
 import styles from "@styles/components/ui/Fly.module.scss";
 
