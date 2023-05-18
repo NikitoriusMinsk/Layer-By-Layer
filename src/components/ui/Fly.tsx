@@ -28,6 +28,7 @@ export const Fly: React.FC<{ visible: boolean }> = (props) => {
 			opacity: [1, 0],
 		},
 	};
+
 	return (
 		<>
 			<motion.div
