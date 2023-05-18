@@ -4,20 +4,11 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { linkedCircles } from "src/utils/particleOptions";
 import Particles from "react-tsparticles";
-import { Engine } from "tsparticles-engine";
-import { env } from "src/env.mjs";
-import { loadFull } from "tsparticles";
+import useParticles from "src/utils/useParticles";
 
 const Sample: React.FC = () => {
 	const { t } = useTranslation("common");
-	const particlesInit = useCallback(async (engine: Engine) => {
-		env.NEXT_PUBLIC_NODE_ENV === "development" && console.log(engine);
-
-		// you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-		// this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-		// starting from v2 you can add only the features you need reducing the bundle size
-		await loadFull(engine);
-	}, []);
+	const { init } = useParticles();
 
 	return (
 		<div
@@ -27,7 +18,7 @@ const Sample: React.FC = () => {
 			<Particles
 				id="particles2"
 				className={styles.background}
-				init={particlesInit}
+				init={init}
 				options={linkedCircles}
 			/>
 			<div className={styles.content}>
