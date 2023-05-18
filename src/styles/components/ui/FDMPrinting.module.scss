@@ -4,11 +4,6 @@
 	height: 50vh;
 
 	.image {
-		> div {
-			height: 100%;
-			width: 100%;
-		}
-
 		* {
 			fill: var(--decorative-element-color);
 		}

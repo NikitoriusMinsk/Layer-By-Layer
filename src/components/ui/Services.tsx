@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@styles/components/ui/Services.module.scss";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const Services: React.FC = () => {
 	const { t } = useTranslation("common");
@@ -14,7 +15,7 @@ const Services: React.FC = () => {
 			<h2>{t("services.heading")}</h2>
 			<div>
 				<Panel
-					src="/images/services/1.png"
+					src="/images/services/1.json"
 					alt={t("services.1.alt")}
 					title={t("services.1.title")}
 					text={t("services.1.text")}
@@ -44,10 +45,10 @@ const Panel: React.FC<{ src: string; alt: string; title: string; text: string }>
 	return (
 		<div className={styles.panel}>
 			<div className={styles.image}>
-				<Image
+				<Player
 					src={src}
-					alt={alt}
-					fill
+					autoplay
+					loop
 				/>
 			</div>
 			<h3>{title}</h3>
