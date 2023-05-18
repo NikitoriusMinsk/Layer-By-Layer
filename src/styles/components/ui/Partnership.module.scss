@@ -6,7 +6,7 @@
 	gap: 48px;
 
 	> img {
-		background-color: #ccc;
+		// background-color: #ccc;
 	}
 
 	> div {
@@ -30,7 +30,7 @@
 					height: $size;
 					width: $size;
 					border-radius: 4px;
-					background-color: #ccc;
+					// background-color: #ccc;
 					left: -30px;
 					top: calc(50% - $size/2);
 				}
