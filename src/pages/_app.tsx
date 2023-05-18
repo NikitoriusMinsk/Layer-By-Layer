@@ -3,6 +3,10 @@ import "@styles/globals.scss";
 import { appWithTranslation } from "next-i18next";
 import MainLayout from "@components/layout/MainLayout";
 import { Montserrat } from "next/font/google";
+import { createContext, useCallback } from "react";
+import { env } from "src/env.mjs";
+import { loadFull } from "tsparticles";
+import { Container, Engine } from "tsparticles-engine";
 
 const montserrat = Montserrat({ subsets: ["cyrillic"] });
 
