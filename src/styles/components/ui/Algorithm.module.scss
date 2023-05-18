@@ -1,20 +1,35 @@
 .container {
-	margin: 0 var(--side-margin);
-	padding: 100px 0;
+	position: relative;
+	padding: 100px var(--side-margin);
 	display: flex;
 	flex-direction: column;
 	gap: 48px;
 
-	> div {
+	.content {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
-		gap: 12px;
+		flex-wrap: wrap;
+		column-gap: 12px;
+		row-gap: 132px;
 
 		// border magic
 		// https://kovart.github.io/dashed-border-generator/
 		// negative stroke-dash-offset moves the start point to the right
 		.panel {
+			width: calc(25% - 9px);
+
+			&:not(:last-child) {
+				&:after {
+					content: "";
+					position: absolute;
+					width: 80px;
+					height: 2px;
+					background-color: var(--decorative-element-color);
+					left: calc(50% + 40px);
+					top: 75%;
+				}
+			}
+
 			&:nth-child(1) {
 				.image::after {
 					position: absolute;
@@ -22,7 +37,7 @@
 					height: 100%;
 					width: 100%;
 					background: var(--decorative-element-color);
-					mask-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='150%2c 400' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
+					mask-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='75%2c 500' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
 				}
 			}
 
@@ -33,7 +48,7 @@
 					height: 100%;
 					width: 100%;
 					background: var(--decorative-element-color);
-					mask-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='300%2c 400' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
+					mask-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='150%2c 400' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
 				}
 			}
 
@@ -44,29 +59,73 @@
 					height: 100%;
 					width: 100%;
 					background: var(--decorative-element-color);
-					mask-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='450%2c 400' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
+					mask-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='225%2c 400' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
 				}
 			}
 
 			&:nth-child(4) {
+				&:after {
+					display: none;
+				}
+
 				.image::after {
 					position: absolute;
 					content: "";
 					height: 100%;
 					width: 100%;
 					background: var(--decorative-element-color);
-					mask-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='600%2c 0' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
+					mask-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='300%2c 400' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
 				}
 			}
 
-			&:not(:last-child) {
-				&:after {
-					content: "";
+			&:nth-child(5) {
+				.image::after {
 					position: absolute;
-					width: 80px;
-					height: 1px;
-					background-color: var(--decorative-element-color);
-					left: calc(50% + 40px);
+					content: "";
+					height: 100%;
+					width: 100%;
+					background: var(--decorative-element-color);
+					mask-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='375%2c 400' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
+				}
+			}
+			&:nth-child(6) {
+				.image::after {
+					position: absolute;
+					content: "";
+					height: 100%;
+					width: 100%;
+					background: var(--decorative-element-color);
+					mask-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='450%2c 400' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
+				}
+			}
+			&:nth-child(7) {
+				.image::after {
+					position: absolute;
+					content: "";
+					height: 100%;
+					width: 100%;
+					background: var(--decorative-element-color);
+					mask-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='525%2c 400' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
+				}
+			}
+			&:nth-child(8) {
+				.image::after {
+					position: absolute;
+					content: "";
+					height: 100%;
+					width: 100%;
+					background: var(--decorative-element-color);
+					mask-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23333' stroke-width='3' stroke-dasharray='575%2c 0' stroke-dashoffset='-75' stroke-linecap='square'/%3e%3c/svg%3e");
+				}
+			}
+
+			&:nth-child(5),
+			&:nth-child(6),
+			&:nth-child(7),
+			&:nth-child(8) {
+				flex-direction: column;
+
+				&:after {
 					top: 25%;
 				}
 			}
@@ -77,9 +136,15 @@
 .panel {
 	position: relative;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	gap: 12px;
-	flex: 1;
+	justify-content: space-between;
+
+	> div {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
 
 	.image {
 		position: relative;
@@ -88,7 +153,7 @@
 		width: 150px;
 		border: none;
 		> img {
-			border: 2px solid #ccc;
+			border: 1px solid #ccc;
 		}
 	}
 }

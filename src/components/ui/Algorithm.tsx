@@ -12,28 +12,49 @@ const Algorithm: React.FC = () => {
 			id="algorithm"
 		>
 			<h2>{t("algorithm.heading")}</h2>
-			<div>
+			<div className={styles.content}>
 				<Panel
 					src="/images/algorithm/1.png"
 					alt={t("algorithm.1.alt")}
 					title={t("algorithm.1.title")}
 					text={t("algorithm.1.text")}
 				/>
-				{/* <div className={styles.spacer} /> */}
 				<Panel
 					src="/images/algorithm/2.png"
 					alt={t("algorithm.2.alt")}
 					title={t("algorithm.2.title")}
 					text={t("algorithm.2.text")}
 				/>
-				{/* <div className={styles.spacer} /> */}
 				<Panel
 					src="/images/algorithm/3.png"
 					alt={t("algorithm.3.alt")}
 					title={t("algorithm.3.title")}
 					text={t("algorithm.3.text")}
 				/>
-				{/* <div className={styles.spacer} /> */}
+				<Panel
+					src="/images/algorithm/4.png"
+					alt={t("algorithm.4.alt")}
+					title={t("algorithm.4.title")}
+					text={t("algorithm.4.text")}
+				/>
+				<Panel
+					src="/images/algorithm/1.png"
+					alt={t("algorithm.1.alt")}
+					title={t("algorithm.1.title")}
+					text={t("algorithm.1.text")}
+				/>
+				<Panel
+					src="/images/algorithm/2.png"
+					alt={t("algorithm.2.alt")}
+					title={t("algorithm.2.title")}
+					text={t("algorithm.2.text")}
+				/>
+				<Panel
+					src="/images/algorithm/3.png"
+					alt={t("algorithm.3.alt")}
+					title={t("algorithm.3.title")}
+					text={t("algorithm.3.text")}
+				/>
 				<Panel
 					src="/images/algorithm/4.png"
 					alt={t("algorithm.4.alt")}
@@ -60,8 +81,10 @@ const Panel: React.FC<{ src: string; alt: string; title: string; text: string }>
 					width={150}
 				/>
 			</div>
-			<h3>{title}</h3>
-			<text>{text}</text>
+			<div>
+				<h3>{title}</h3>
+				<text>{text}</text>
+			</div>
 		</div>
 	);
 };
