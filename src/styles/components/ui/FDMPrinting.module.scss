@@ -3,10 +3,6 @@
 	flex-direction: row;
 	height: 50vh;
 
-	.image {
-		// background-color: #ccc;
-	}
-
 	.image,
 	.info {
 		position: relative;
@@ -25,8 +21,8 @@
 			align-self: center;
 			border-radius: 48px;
 			cursor: pointer;
-			background-color: transparent;
-			border: 1px solid #ccc;
+			background-color: var(--primary-button-color);
+			border: none;
 		}
 	}
 }

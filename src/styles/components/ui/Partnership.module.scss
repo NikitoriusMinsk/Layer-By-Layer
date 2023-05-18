@@ -5,10 +5,6 @@
 	justify-content: space-between;
 	gap: 48px;
 
-	> img {
-		// background-color: #ccc;
-	}
-
 	> div {
 		display: flex;
 		flex-direction: column;
@@ -30,7 +26,7 @@
 					height: $size;
 					width: $size;
 					border-radius: 4px;
-					// background-color: #ccc;
+					background-color: var(--decorative-element-color);
 					left: -30px;
 					top: calc(50% - $size/2);
 				}

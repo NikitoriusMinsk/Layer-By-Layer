@@ -19,21 +19,21 @@ const Algorithm: React.FC = () => {
 					title={t("algorithm.1.title")}
 					text={t("algorithm.1.text")}
 				/>
-				<div className={styles.spacer} />
+				{/* <div className={styles.spacer} /> */}
 				<Panel
 					src="/images/algorithm/2.png"
 					alt={t("algorithm.2.alt")}
 					title={t("algorithm.2.title")}
 					text={t("algorithm.2.text")}
 				/>
-				<div className={styles.spacer} />
+				{/* <div className={styles.spacer} /> */}
 				<Panel
 					src="/images/algorithm/3.png"
 					alt={t("algorithm.3.alt")}
 					title={t("algorithm.3.title")}
 					text={t("algorithm.3.text")}
 				/>
-				<div className={styles.spacer} />
+				{/* <div className={styles.spacer} /> */}
 				<Panel
 					src="/images/algorithm/4.png"
 					alt={t("algorithm.4.alt")}

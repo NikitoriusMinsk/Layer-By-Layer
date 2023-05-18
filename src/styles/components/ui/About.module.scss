@@ -1,6 +1,5 @@
 .container {
-	margin: 0 var(--side-margin);
-	padding: 100px 0;
+	padding: 100px var(--side-margin);
 	display: flex;
 	flex-direction: column;
 	gap: 48px;
@@ -18,6 +17,14 @@
 	flex-direction: column;
 	gap: 12px;
 	flex: 1;
+	background-color: var(--accent-color);
+	border-radius: 18px;
+	overflow: hidden;
+
+	h3,
+	text {
+		padding: 0 12px 12px 12px;
+	}
 
 	> .image {
 		position: relative;

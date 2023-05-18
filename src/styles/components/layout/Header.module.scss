@@ -7,7 +7,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: white;
+	background-color: var(--secondary-color);
 	z-index: 99;
 
 	.logo {
@@ -27,6 +27,13 @@
 		flex-direction: row;
 		gap: 18px;
 
+		a {
+			transition: color 0.3s ease-in-out;
+			&:hover {
+				color: var(--decorative-element-color);
+			}
+		}
+
 		&.mobile {
 			position: absolute;
 			top: 0;
@@ -37,7 +44,7 @@
 			gap: 24px;
 			align-items: center;
 			justify-content: center;
-			background-color: white;
+			background-color: var(--secondary-color);
 
 			> button {
 				position: absolute;
@@ -49,9 +56,9 @@
 
 	button {
 		padding: 12px;
-		background-color: transparent;
+		background-color: var(--secondary-button-color);
 		border-radius: 8px;
-		border: 1px solid #ccc;
+		border: none;
 		cursor: pointer;
 	}
 }

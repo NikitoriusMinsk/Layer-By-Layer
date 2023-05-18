@@ -11,7 +11,7 @@
 	> form {
 		z-index: 2;
 		padding: 24px;
-		background-color: white;
+		background-color: var(--accent-color);
 		border-radius: 8px;
 		display: flex;
 		flex-direction: column;
@@ -35,7 +35,8 @@
 
 			input {
 				padding: 6px;
-				border: 1px solid #ccc;
+				border: none;
+				background-color: var(--secondary-color);
 				border-radius: 4px;
 			}
 
@@ -47,8 +48,8 @@
 
 			input[data-name="submit"] {
 				cursor: pointer;
-				background-color: transparent;
-				border: 1px solid #ccc;
+				background-color: var(--primary-button-color);
+				border: none;
 				border-radius: 8px;
 				flex: 1;
 			}
@@ -65,17 +66,13 @@
 				gap: 12px;
 				flex: 0.5;
 
-				> img {
-					// background-color: #ccc;
-				}
-
 				&:before {
 					content: attr(data-count);
 					position: absolute;
 					top: 0;
 					left: 0;
 					padding: 0 3px;
-					background-color: white;
+					background-color: var(--secondary-button-color);
 					border-radius: 4px;
 					font-size: 12px;
 				}
