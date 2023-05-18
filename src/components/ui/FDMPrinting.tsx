@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@styles/components/ui/FDMPrinting.module.scss";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const FDMPrinting: React.FC = () => {
 	const { t } = useTranslation("common");
@@ -12,10 +13,11 @@ const FDMPrinting: React.FC = () => {
 			id="printing"
 		>
 			<div className={styles.image}>
-				<Image
-					src={"/images/FDMPrinting.png"}
-					fill
-					alt={t("fdm_printing.alt")}
+				<Player
+					src={"/images/fdm-printing/FDM.json"}
+					autoplay
+					loop
+					style={{ height: "100%", width: "100%" }}
 				/>
 			</div>
 			<div className={styles.info}>
