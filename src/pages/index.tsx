@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 				<title>Layer By Layer</title>
 				<link
 					rel="icon"
-					href="/favicon.ico"
+					href="/images/logo.svg"
 				/>
 			</Head>
 			<div className={styles.container}>
