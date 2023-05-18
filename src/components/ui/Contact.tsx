@@ -2,19 +2,24 @@ import React from "react";
 import styles from "@styles/components/ui/Contact.module.scss";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import useParticles from "src/utils/useParticles";
+import Particles from "react-tsparticles";
+import { linkedCircles } from "src/utils/particleOptions";
 
 const Contact: React.FC = () => {
 	const { t } = useTranslation("common");
+	const { init } = useParticles();
 
 	return (
 		<div
 			className={styles.container}
 			id="order"
 		>
-			<Image
-				src={"/images/contact.png"}
-				alt=""
-				fill
+			<Particles
+				id="particles3"
+				className={styles.background}
+				init={init}
+				options={linkedCircles}
 			/>
 			<form>
 				<span>
