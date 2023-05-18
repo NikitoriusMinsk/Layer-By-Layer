@@ -38,28 +38,28 @@ const Algorithm: React.FC = () => {
 					text={t("algorithm.4.text")}
 				/>
 				<Panel
-					src="/images/algorithm/1.png"
-					alt={t("algorithm.1.alt")}
-					title={t("algorithm.1.title")}
-					text={t("algorithm.1.text")}
+					src="/images/algorithm/5.png"
+					alt={t("algorithm.5.alt")}
+					title={t("algorithm.5.title")}
+					text={t("algorithm.5.text")}
 				/>
 				<Panel
-					src="/images/algorithm/2.png"
-					alt={t("algorithm.2.alt")}
-					title={t("algorithm.2.title")}
-					text={t("algorithm.2.text")}
+					src="/images/algorithm/6.png"
+					alt={t("algorithm.6.alt")}
+					title={t("algorithm.6.title")}
+					text={t("algorithm.6.text")}
 				/>
 				<Panel
-					src="/images/algorithm/3.png"
-					alt={t("algorithm.3.alt")}
-					title={t("algorithm.3.title")}
-					text={t("algorithm.3.text")}
+					src="/images/algorithm/7.png"
+					alt={t("algorithm.7.alt")}
+					title={t("algorithm.7.title")}
+					text={t("algorithm.7.text")}
 				/>
 				<Panel
 					src="/images/algorithm/4.png"
-					alt={t("algorithm.4.alt")}
-					title={t("algorithm.4.title")}
-					text={t("algorithm.4.text")}
+					alt={t("algorithm.8.alt")}
+					title={t("algorithm.8.title")}
+					text={t("algorithm.8.text")}
 				/>
 			</div>
 		</div>
