@@ -19,12 +19,12 @@ const Services: React.FC = () => {
 					text={t("services.1.text")}
 				/>
 				<Panel
-					src="/images/services/2.png"
+					src="/images/services/2.json"
 					title={t("services.2.title")}
 					text={t("services.2.text")}
 				/>
 				<Panel
-					src="/images/services/3.png"
+					src="/images/services/3.json"
 					title={t("services.3.title")}
 					text={t("services.3.text")}
 				/>
