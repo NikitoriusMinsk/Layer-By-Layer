@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "@styles/components/ui/Contact.module.scss";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
@@ -9,6 +9,7 @@ import { linkedCircles } from "src/utils/particleOptions";
 const Contact: React.FC = () => {
 	const { t } = useTranslation("common");
 	const { init } = useParticles();
+	const [fileCount, setFileCount] = useState<number | undefined>(0);
 
 	return (
 		<div
@@ -53,11 +54,13 @@ const Contact: React.FC = () => {
 					/>
 					<label
 						data-name="file"
-						data-count="0"
+						data-count={fileCount ?? 0}
 					>
 						<input
 							type="file"
 							name="file"
+							onChange={(e) => setFileCount(e.target.files?.length)}
+							multiple
 						/>
 						<Image
 							src={"/images/file-upload.png"}
