@@ -91,12 +91,12 @@ const MobileHeader: React.FC = () => {
 						>
 							{t("algorithm")}
 						</a>
-						<a
+						{/* <a
 							onClick={handleNavigate}
 							href="#partnership"
 						>
 							{t("partnership")}
-						</a>
+						</a> */}
 						<a
 							onClick={handleNavigate}
 							href="#order"
