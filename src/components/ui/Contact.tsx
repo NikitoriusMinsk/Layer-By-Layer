@@ -63,7 +63,7 @@ const Contact: React.FC = () => {
 							multiple
 						/>
 						<Image
-							src={"/images/file-upload.png"}
+							src={"/images/contact/file-upload.svg"}
 							alt={t("contact.upload.alt")}
 							height={48}
 							width={48}
