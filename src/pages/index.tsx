@@ -9,7 +9,7 @@ import Services from "@components/ui/Services";
 import Sample from "@components/ui/Sample";
 import Algorithm from "@components/ui/Algorithm";
 import Contact from "@components/ui/Contact";
-import Partnership from "@components/ui/Partnership";
+// import Partnership from "@components/ui/Partnership";
 
 const Home: NextPage = () => {
 	return (

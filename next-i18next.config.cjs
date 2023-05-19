@@ -1,3 +1,4 @@
+const { initReactI18next } = require('react-i18next');
 const path = require("path");
 
 /** @type {import("next-i18next").UserConfig} */
@@ -10,4 +11,6 @@ module.exports = {
     },
     ns: ['common', 'footer', 'header'],
     localePath: path.resolve("./public/locales"),
+    serializeConfig: false,
+    use: [initReactI18next]
 };

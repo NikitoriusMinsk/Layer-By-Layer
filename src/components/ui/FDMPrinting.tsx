@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "@styles/components/ui/FDMPrinting.module.scss";
-import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { Player } from "@lottiefiles/react-lottie-player";
 

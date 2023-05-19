@@ -1,7 +1,6 @@
 import { useTranslation } from "next-i18next";
 import React from "react";
 import styles from "@styles/components/ui/About.module.scss";
-import Image from "next/image";
 import { Player } from "@lottiefiles/react-lottie-player";
 
 const About: React.FC = () => {
@@ -16,19 +15,16 @@ const About: React.FC = () => {
 			<div>
 				<Panel
 					src="/images/about/1.json"
-					alt={t("about.1.alt")}
 					title={t("about.1.title")}
 					text={t("about.1.text")}
 				/>
 				<Panel
 					src="/images/about/2.json"
-					alt={t("about.2.alt")}
 					title={t("about.2.title")}
 					text={t("about.2.text")}
 				/>
 				<Panel
 					src="/images/about/3.json"
-					alt={t("about.3.alt")}
 					title={t("about.3.title")}
 					text={t("about.3.text")}
 				/>
@@ -37,10 +33,8 @@ const About: React.FC = () => {
 	);
 };
 
-const Panel: React.FC<{ src: string; alt: string; title: string; text: string }> = (
-	props
-) => {
-	const { alt, src, text, title } = props;
+const Panel: React.FC<{ src: string; title: string; text: string }> = (props) => {
+	const { src, text, title } = props;
 
 	return (
 		<div className={styles.panel}>

@@ -3,6 +3,7 @@ import "@styles/globals.scss";
 import { appWithTranslation } from "next-i18next";
 import MainLayout from "@components/layout/MainLayout";
 import { Montserrat } from "next/font/google";
+import nextI18nextConfig from "next-i18next.config.cjs";
 // import { useState } from "react";
 // import { Fly } from "@components/ui/Fly";
 
@@ -27,4 +28,4 @@ const MyApp: AppType = ({ Component, pageProps }) => {
 	);
 };
 
-export default appWithTranslation(MyApp);
+export default appWithTranslation(MyApp, nextI18nextConfig);
