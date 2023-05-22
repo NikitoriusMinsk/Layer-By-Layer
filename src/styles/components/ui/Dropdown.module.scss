@@ -1,0 +1,29 @@
+.container {
+	position: relative;
+	display: flex;
+	align-items: center;
+	background-color: var(--accent-color);
+	padding: 6px;
+
+	.selected {
+		cursor: pointer;
+	}
+
+	.items {
+		background-color: var(--accent-color);
+		position: absolute;
+		top: 100%;
+		left: 0;
+		height: 0;
+		overflow: hidden;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 6px;
+
+		.item {
+			cursor: pointer;
+		}
+	}
+}

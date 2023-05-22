@@ -40,7 +40,7 @@ export const linkedCircles: RecursivePartial<IOptions> = {
 			outModes: {
 				default: "bounce",
 			},
-			random: true,
+			random: false,
 			speed: 2,
 			straight: false,
 		},

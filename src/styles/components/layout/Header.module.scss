@@ -54,6 +54,12 @@
 		}
 	}
 
+	.controls {
+		display: flex;
+		flex-direction: row;
+		gap: 24px;
+	}
+
 	button {
 		padding: 7px;
 		background-color: var(--secondary-button-color);

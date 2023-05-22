@@ -4,9 +4,24 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { scrollToAnchor } from "src/utils/scrollToAnchor";
 import { Switcher } from "@components/ui/Switcher";
+import { Dropdown } from "@components/ui/Dropdown";
+import { changeLanguage } from "i18next";
+import { useRouter } from "next/router";
 
 const Header: React.FC = () => {
-	const { t } = useTranslation("header");
+	const { t, i18n } = useTranslation("header");
+	const router = useRouter();
+
+	function getDefaultLanguage() {
+		switch (true) {
+			case i18n.language === "ru":
+				return 1;
+			case i18n.language === "en":
+				return 0;
+			default:
+				return 0;
+		}
+	}
 
 	return (
 		<header className={styles.container}>
@@ -66,7 +81,21 @@ const Header: React.FC = () => {
 					{t("order")}
 				</a>
 			</nav>
-			<div>
+			<div className={styles.controls}>
+				<Dropdown
+					items={[
+						{ title: "EN", value: "en" },
+						{ title: "RU", value: "ru" },
+					]}
+					onSelected={(lang) =>
+						router.push(
+							{ pathname: router.pathname, query: router.query },
+							router.asPath,
+							{ locale: lang }
+						)
+					}
+					defaultSelected={getDefaultLanguage()}
+				/>
 				<Switcher />
 			</div>
 		</header>

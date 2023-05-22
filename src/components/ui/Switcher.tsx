@@ -26,6 +26,7 @@ export const Switcher: React.FC = () => {
 				variants={variants}
 				onClick={handleClick}
 				animate={isOn ? "on" : "off"}
+				initial={false}
 			/>
 		</div>
 	);
