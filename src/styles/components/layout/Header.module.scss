@@ -43,7 +43,6 @@
 			flex-direction: column;
 			gap: 24px;
 			align-items: center;
-			justify-content: center;
 			background-color: var(--secondary-color);
 
 			> button {
@@ -57,7 +56,16 @@
 	.controls {
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 		gap: 24px;
+	}
+
+	.buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		padding: 12px;
 	}
 
 	button {

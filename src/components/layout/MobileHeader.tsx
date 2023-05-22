@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 import { scrollToAnchor } from "src/utils/scrollToAnchor";
+import { Controls } from "./Controls";
 
 const menuVariants: Variants = {
 	open: {
@@ -45,67 +46,68 @@ const MobileHeader: React.FC = () => {
 					alt={t("burger_alt")}
 				/>
 			</button>
-			<AnimatePresence initial={false}>
-				{isMenuOpen && (
-					<motion.nav
-						className={styles.mobile}
-						variants={menuVariants}
-						animate={"open"}
-						exit={"closed"}
-					>
-						<button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-							<Image
-								src={"/images/burger.svg"}
-								height={24}
-								width={24}
-								alt={t("burger_alt")}
-							/>
-						</button>
-						<a
-							onClick={handleNavigate}
-							href="#about"
-						>
-							{t("about")}
-						</a>
-						<a
-							onClick={handleNavigate}
-							href="#printing"
-						>
-							{t("fdm_printing")}
-						</a>
-						<a
-							onClick={handleNavigate}
-							href="#services"
-						>
-							{t("services")}
-						</a>
-						<a
-							onClick={handleNavigate}
-							href="#sample"
-						>
-							{t("sample")}
-						</a>
-						<a
-							onClick={handleNavigate}
-							href="#algorithm"
-						>
-							{t("algorithm")}
-						</a>
-						{/* <a
+
+			<motion.nav
+				className={styles.mobile}
+				variants={menuVariants}
+				animate={isMenuOpen ? "open" : "closed"}
+			>
+				<div className={styles.buttons}>
+					<div className={styles.controls}>
+						<Controls />
+					</div>
+					<button onClick={() => setIsMenuOpen(!isMenuOpen)}>
+						<Image
+							src={"/images/burger.svg"}
+							height={24}
+							width={24}
+							alt={t("burger_alt")}
+						/>
+					</button>
+				</div>
+				<a
+					onClick={handleNavigate}
+					href="#about"
+				>
+					{t("about")}
+				</a>
+				<a
+					onClick={handleNavigate}
+					href="#printing"
+				>
+					{t("fdm_printing")}
+				</a>
+				<a
+					onClick={handleNavigate}
+					href="#services"
+				>
+					{t("services")}
+				</a>
+				<a
+					onClick={handleNavigate}
+					href="#sample"
+				>
+					{t("sample")}
+				</a>
+				<a
+					onClick={handleNavigate}
+					href="#algorithm"
+				>
+					{t("algorithm")}
+				</a>
+				{/* <a
 							onClick={handleNavigate}
 							href="#partnership"
 						>
 							{t("partnership")}
 						</a> */}
-						<a
-							onClick={handleNavigate}
-							href="#order"
-						>
-							{t("order")}
-						</a>
-					</motion.nav>
-				)}
-			</AnimatePresence>
+				<a
+					onClick={handleNavigate}
+					href="#order"
+				>
+					{t("order")}
+				</a>
+			</motion.nav>
 		</header>
 	);
 };
