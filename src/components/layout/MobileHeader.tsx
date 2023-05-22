@@ -3,7 +3,7 @@ import styles from "@styles/components/layout/Header.module.scss";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
-import scrollToAnchor from "src/utils/scrollToAnchor";
+import { scrollToAnchor } from "src/utils/scrollToAnchor";
 
 const menuVariants: Variants = {
 	open: {

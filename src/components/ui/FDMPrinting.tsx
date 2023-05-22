@@ -2,6 +2,7 @@ import React from "react";
 import styles from "@styles/components/ui/FDMPrinting.module.scss";
 import { useTranslation } from "next-i18next";
 import { Player } from "@lottiefiles/react-lottie-player";
+import { scrollToAnchorByString } from "src/utils/scrollToAnchor";
 
 const FDMPrinting: React.FC = () => {
 	const { t } = useTranslation("common");
@@ -22,7 +23,9 @@ const FDMPrinting: React.FC = () => {
 			<div className={styles.info}>
 				<h2>{t("fdm_printing.heading")}</h2>
 				<text>{t("fdm_printing.text")}</text>
-				<button>{t("fdm_printing.button")}</button>
+				<button onClick={() => scrollToAnchorByString("#order")}>
+					{t("fdm_printing.button")}
+				</button>
 			</div>
 		</div>
 	);

@@ -2,7 +2,7 @@ import React from "react";
 import styles from "@styles/components/layout/Footer.module.scss";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
-import scrollToAnchor from "src/utils/scrollToAnchor";
+import { scrollToAnchor } from "src/utils/scrollToAnchor";
 
 const Footer: React.FC = () => {
 	const { t } = useTranslation("footer");
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
 				<Image
 					src={"/images/logo.svg"}
 					height={50}
-					width={150}
+					width={100}
 					alt={t("logo_alt")}
 				/>
 				<span>{t("slogan")}</span>

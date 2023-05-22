@@ -2,7 +2,7 @@ import React from "react";
 import styles from "@styles/components/layout/Header.module.scss";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
-import scrollToAnchor from "src/utils/scrollToAnchor";
+import { scrollToAnchor } from "src/utils/scrollToAnchor";
 
 const Header: React.FC = () => {
 	const { t } = useTranslation("header");
@@ -17,7 +17,7 @@ const Header: React.FC = () => {
 				<Image
 					src={"/images/logo.svg"}
 					height={50}
-					width={150}
+					width={100}
 					alt={t("logo_alt")}
 				/>
 			</a>

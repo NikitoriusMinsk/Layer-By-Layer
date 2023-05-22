@@ -46,14 +46,7 @@
 				padding: 12px 52px;
 				cursor: pointer;
 				border-radius: 4px;
-
-				&:first-child {
-					background-color: var(--primary-button-color);
-				}
-
-				&:last-child {
-					background-color: var(--secondary-button-color);
-				}
+				background-color: var(--primary-button-color);
 			}
 		}
 	}

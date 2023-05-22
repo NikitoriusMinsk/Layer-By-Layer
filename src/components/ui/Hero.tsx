@@ -4,6 +4,7 @@ import styles from "@styles/components/ui/Hero.module.scss";
 import Particles from "react-tsparticles";
 import { linkedCircles } from "src/utils/particleOptions";
 import useParticles from "src/utils/useParticles";
+import { scrollToAnchorByString } from "src/utils/scrollToAnchor";
 
 const Hero: React.FC = () => {
 	const { t } = useTranslation("common");
@@ -24,8 +25,9 @@ const Hero: React.FC = () => {
 				<h1>{t("hero.heading")}</h1>
 				<text>{t("hero.text")}</text>
 				<div className={styles.buttons}>
-					<button>{t("hero.quote")}</button>
-					<button>{t("hero.contact")}</button>
+					<button onClick={() => scrollToAnchorByString("#order")}>
+						{t("hero.contact")}
+					</button>
 				</div>
 			</div>
 		</div>
