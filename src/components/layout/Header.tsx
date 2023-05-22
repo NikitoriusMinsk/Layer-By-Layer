@@ -27,9 +27,9 @@ const Header: React.FC = () => {
 				);
 				document.documentElement.style.setProperty(
 					"--secondary-button-color",
-					"#ccc"
+					"#ededed"
 				);
-				document.documentElement.style.setProperty("--accent-color", "#ccc");
+				document.documentElement.style.setProperty("--accent-color", "#ededed");
 				setTheme("light");
 				break;
 			case "light":
