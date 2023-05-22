@@ -36,10 +36,6 @@ export const Meta: React.FC = () => {
 				content={"Layer By Layer"}
 			/>
 			<meta
-				property="twitter:description"
-				content={"3D-printing services"}
-			/>
-			<meta
 				property="twitter:card"
 				content="summary"
 			/>
