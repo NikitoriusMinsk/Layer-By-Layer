@@ -4,6 +4,10 @@ export const Meta: React.FC = () => {
 	return (
 		<>
 			<meta
+				name="description"
+				content={"3D-printing services"}
+			/>
+			<meta
 				property="description"
 				content={"3D-printing services"}
 			/>
