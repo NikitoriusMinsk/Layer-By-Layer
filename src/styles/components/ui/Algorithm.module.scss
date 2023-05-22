@@ -167,12 +167,15 @@
 	.image {
 		position: relative;
 		display: flex;
-		height: 150px;
-		width: 150px;
+		min-height: 150px;
+		min-width: 150px;
+		max-width: 150px;
+		max-height: 150px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		border: none;
-		> img {
-			border: 2px solid var(--accent-color);
-		}
+		border: 2px solid var(--accent-color);
 	}
 }
 
