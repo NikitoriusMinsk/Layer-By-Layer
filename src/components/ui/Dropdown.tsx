@@ -2,16 +2,16 @@ import React, { useState } from "react";
 import styles from "@styles/components/ui/Dropdown.module.scss";
 import { type Variants, motion } from "framer-motion";
 
-interface DropdownProps {
+interface DropdownProps<T> {
 	items: {
-		value: any;
 		title: string;
+		value: T;
 	}[];
 	defaultSelected?: number;
-	onSelected: (value: DropdownProps["items"][number]["value"]) => void;
+	onSelected: (value: DropdownProps<T>["items"][number]["value"]) => void;
 }
 
-export const Dropdown: React.FC<DropdownProps> = (props) => {
+export const Dropdown = <T,>(props: DropdownProps<T>) => {
 	const { items, defaultSelected, onSelected } = props;
 	const [isOpen, setIsOpen] = useState(false);
 	const [selectedItem, setSelectedItem] = useState(items[defaultSelected ?? 0]);
@@ -29,7 +29,7 @@ export const Dropdown: React.FC<DropdownProps> = (props) => {
 		},
 	};
 
-	function handleSelect(item: DropdownProps["items"][number]) {
+	function handleSelect(item: DropdownProps<T>["items"][number]) {
 		onSelected(item.value);
 		setSelectedItem(item);
 		setIsOpen(false);
@@ -55,11 +55,11 @@ export const Dropdown: React.FC<DropdownProps> = (props) => {
 			>
 				{items
 					.filter((item) => item.value !== selectedItem?.value)
-					.map((item) => (
+					.map((item, index) => (
 						<div
 							className={styles.item}
 							onClick={() => handleSelect(item)}
-							key={item.value as string}
+							key={`dropdown_${index}`}
 						>
 							{item.title}
 						</div>

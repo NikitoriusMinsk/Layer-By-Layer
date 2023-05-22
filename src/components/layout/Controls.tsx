@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 import { Switcher } from "@components/ui/Switcher";
-// import { Dropdown } from "@components/ui/Dropdown";
+import { Dropdown } from "@components/ui/Dropdown";
 import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
-import dynamic from "next/dynamic";
-const Dropdown = dynamic(async () => (await import("@components/ui/Dropdown")).Dropdown, {
-	ssr: false,
-});
 
 const languages = [
 	{ title: "EN", value: "en" },
@@ -57,7 +53,7 @@ export const Controls: React.FC = () => {
 					void router.push(
 						{ pathname: router.pathname, query: router.query },
 						router.asPath,
-						{ locale: lang as string }
+						{ locale: lang }
 					);
 				}}
 				defaultSelected={languages.findIndex(
