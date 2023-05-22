@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "@styles/components/ui/Dropdown.module.scss";
 import { type Variants, motion } from "framer-motion";
 
-interface DropdownProps<T> {
+export interface DropdownProps<T> {
 	items: {
 		title: string;
 		value: T;
