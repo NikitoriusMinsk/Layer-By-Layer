@@ -53,13 +53,13 @@ export const Controls: React.FC = () => {
 		<>
 			<Dropdown
 				items={languages}
-				onSelected={(lang) =>
-					router.push(
+				onSelected={(lang) => {
+					void router.push(
 						{ pathname: router.pathname, query: router.query },
 						router.asPath,
-						{ locale: lang }
-					)
-				}
+						{ locale: lang as string }
+					);
+				}}
 				defaultSelected={languages.findIndex(
 					(lang) => lang.value === i18n.language
 				)}

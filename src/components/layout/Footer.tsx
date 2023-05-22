@@ -119,24 +119,24 @@ const Footer: React.FC = () => {
 	);
 };
 
-const SocialBubble: React.FC<{ src: string; alt: string; href: string }> = (props) => {
-	const { alt, href, src } = props;
+// const SocialBubble: React.FC<{ src: string; alt: string; href: string }> = (props) => {
+// 	const { alt, href, src } = props;
 
-	return (
-		<a
-			href={href}
-			rel="noreferrer noopener"
-			target="_blank"
-			className={styles.socialBubble}
-		>
-			<Image
-				src={src}
-				alt={alt}
-				height={36}
-				width={36}
-			/>
-		</a>
-	);
-};
+// 	return (
+// 		<a
+// 			href={href}
+// 			rel="noreferrer noopener"
+// 			target="_blank"
+// 			className={styles.socialBubble}
+// 		>
+// 			<Image
+// 				src={src}
+// 				alt={alt}
+// 				height={36}
+// 				width={36}
+// 			/>
+// 		</a>
+// 	);
+// };
 
 export default Footer;

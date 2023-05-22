@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "@styles/components/layout/Header.module.scss";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
@@ -6,7 +6,7 @@ import { scrollToAnchor } from "src/utils/scrollToAnchor";
 import { Controls } from "./Controls";
 
 const Header: React.FC = () => {
-	const { t, i18n } = useTranslation("header");
+	const { t } = useTranslation("header");
 
 	return (
 		<header className={styles.container}>

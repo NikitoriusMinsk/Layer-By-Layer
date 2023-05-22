@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "@styles/components/ui/Switcher.module.scss";
-import { Variants, motion } from "framer-motion";
+import { type Variants, motion } from "framer-motion";
 
 interface SwitcherProps {
 	onSwitch: () => void;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "@styles/components/ui/Dropdown.module.scss";
-import { Variants, motion } from "framer-motion";
+import { type Variants, motion } from "framer-motion";
 
 interface DropdownProps {
 	items: {
@@ -59,7 +59,7 @@ export const Dropdown: React.FC<DropdownProps> = (props) => {
 						<div
 							className={styles.item}
 							onClick={() => handleSelect(item)}
-							key={item.value}
+							key={item.value as string}
 						>
 							{item.title}
 						</div>
