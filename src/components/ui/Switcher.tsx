@@ -2,8 +2,14 @@ import React, { useState } from "react";
 import styles from "@styles/components/ui/Switcher.module.scss";
 import { Variants, motion } from "framer-motion";
 
-export const Switcher: React.FC = () => {
-	const [isOn, setIsOn] = useState(false);
+interface SwitcherProps {
+	onSwitch: () => void;
+	defaultOn?: boolean;
+}
+
+export const Switcher: React.FC<SwitcherProps> = (props) => {
+	const { onSwitch, defaultOn } = props;
+	const [isOn, setIsOn] = useState(defaultOn);
 
 	const variants: Variants = {
 		on: {
@@ -15,8 +21,7 @@ export const Switcher: React.FC = () => {
 	};
 
 	function handleClick() {
-		// TODO: change theme
-
+		onSwitch();
 		setIsOn(!isOn);
 	}
 
