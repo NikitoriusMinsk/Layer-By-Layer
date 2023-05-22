@@ -46,4 +46,10 @@
 			flex-direction: column;
 		}
 	}
+
+	.panel {
+		&:hover {
+			box-shadow: none;
+		}
+	}
 }
