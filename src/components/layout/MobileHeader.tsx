@@ -51,6 +51,7 @@ const MobileHeader: React.FC = () => {
 				className={styles.mobile}
 				variants={menuVariants}
 				animate={isMenuOpen ? "open" : "closed"}
+				initial={false}
 			>
 				<div className={styles.buttons}>
 					<div className={styles.controls}>
