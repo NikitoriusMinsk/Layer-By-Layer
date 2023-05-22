@@ -16,6 +16,7 @@ const Home: NextPage = () => {
 	return (
 		<>
 			<Head>
+				<title>{"Layer By Layer"}</title>
 				<Meta />
 				<link
 					rel="icon"

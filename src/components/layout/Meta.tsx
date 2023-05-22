@@ -3,11 +3,6 @@ import React from "react";
 export const Meta: React.FC = () => {
 	return (
 		<>
-			<title>Layer By Layer</title>
-			<meta
-				property="title"
-				content={"Layer By Layer"}
-			/>
 			<meta
 				property="description"
 				content={"3D-printing services"}
