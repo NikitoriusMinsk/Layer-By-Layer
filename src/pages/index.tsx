@@ -9,13 +9,15 @@ import Services from "@components/ui/Services";
 import Sample from "@components/ui/Sample";
 import Algorithm from "@components/ui/Algorithm";
 import Contact from "@components/ui/Contact";
+import { useTranslation } from "react-i18next";
+import { Meta } from "@components/layout/Meta";
 // import Partnership from "@components/ui/Partnership";
 
 const Home: NextPage = () => {
 	return (
 		<>
 			<Head>
-				<title>Layer By Layer</title>
+				<Meta />
 				<link
 					rel="icon"
 					href="/images/logo.svg"
@@ -42,6 +44,7 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
 				"common",
 				"header",
 				"footer",
+				"meta",
 			])),
 			// Will be passed to the page component as props
 		},
