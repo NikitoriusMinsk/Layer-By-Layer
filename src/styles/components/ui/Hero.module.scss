@@ -58,3 +58,9 @@
 		}
 	}
 }
+
+@media screen and (max-width: 425px) {
+	.container {
+		height: calc(100vh - 74px);
+	}
+}

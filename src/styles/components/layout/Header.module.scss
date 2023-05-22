@@ -55,10 +55,16 @@
 	}
 
 	button {
-		padding: 12px;
+		padding: 7px;
 		background-color: var(--secondary-button-color);
 		border-radius: 8px;
 		border: none;
 		cursor: pointer;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.container {
+		padding: 12px;
 	}
 }
