@@ -29,6 +29,8 @@
 			cursor: pointer;
 			background-color: var(--primary-button-color);
 			border: none;
+			white-space: nowrap;
+			text-align: center;
 		}
 	}
 }
@@ -37,5 +39,15 @@
 	.container {
 		flex-direction: column;
 		height: 100%;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.container {
+		.info {
+			text {
+				text-align: center;
+			}
+		}
 	}
 }
