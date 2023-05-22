@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { Switcher } from "@components/ui/Switcher";
-import { Dropdown } from "@components/ui/Dropdown";
+// import { Dropdown } from "@components/ui/Dropdown";
 import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
+import dynamic from "next/dynamic";
+const Dropdown = dynamic(async () => (await import("@components/ui/Dropdown")).Dropdown, {
+	ssr: false,
+});
 
 const languages = [
 	{ title: "EN", value: "en" },
