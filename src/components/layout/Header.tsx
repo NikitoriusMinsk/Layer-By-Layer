@@ -3,6 +3,7 @@ import styles from "@styles/components/layout/Header.module.scss";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { scrollToAnchor } from "src/utils/scrollToAnchor";
+import { Switcher } from "@components/ui/Switcher";
 
 const Header: React.FC = () => {
 	const { t } = useTranslation("header");
@@ -65,6 +66,9 @@ const Header: React.FC = () => {
 					{t("order")}
 				</a>
 			</nav>
+			<div>
+				<Switcher />
+			</div>
 		</header>
 	);
 };

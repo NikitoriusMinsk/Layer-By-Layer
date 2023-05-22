@@ -1,0 +1,12 @@
+.container {
+	background-color: var(--accent-color);
+	width: 50px;
+	border-radius: 18px;
+	> div {
+		cursor: pointer;
+		height: 25px;
+		width: 25px;
+		border-radius: 100%;
+		background-color: var(--decorative-element-color);
+	}
+}
