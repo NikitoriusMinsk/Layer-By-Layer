@@ -100,7 +100,8 @@
 		},
 		"upload": {
 			"alt": "alt",
-			"text": "text"
+			"text": "text",
+			"drag": "drag"
 		},
 		"submit": "submit"
 	}
