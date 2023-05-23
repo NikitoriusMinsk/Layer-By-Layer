@@ -10,6 +10,9 @@ export const linkedCircles: RecursivePartial<IOptions> = {
 		position: "relative",
 	},
 	fpsLimit: 60,
+	pauseOnOutsideViewport: true,
+	pauseOnBlur: true,
+	fullScreen: false,
 	particles: {
 		color: {
 			value:
