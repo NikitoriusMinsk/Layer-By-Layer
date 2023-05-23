@@ -1,10 +1,11 @@
-import React, { type MouseEvent, useState } from "react";
+import React, { type MouseEvent, useState, useContext } from "react";
 import styles from "@styles/components/layout/Header.module.scss";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { motion, type Variants } from "framer-motion";
 import { scrollToAnchor } from "src/utils/scrollToAnchor";
 import { Controls } from "./Controls";
+import { ThemeContext } from "src/pages/_app";
 
 const menuVariants: Variants = {
 	open: {
@@ -18,6 +19,7 @@ const menuVariants: Variants = {
 const MobileHeader: React.FC = () => {
 	const { t } = useTranslation("header");
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const { theme } = useContext(ThemeContext);
 
 	function handleNavigate(e: MouseEvent<HTMLAnchorElement>) {
 		setIsMenuOpen(false);
@@ -32,7 +34,7 @@ const MobileHeader: React.FC = () => {
 				onClick={scrollToAnchor}
 			>
 				<Image
-					src={"/images/logo.svg"}
+					src={`/images/logo-${theme}.svg`}
 					height={30}
 					width={120}
 					alt={t("logo_alt")}

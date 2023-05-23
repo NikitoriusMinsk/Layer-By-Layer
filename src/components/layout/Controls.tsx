@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Switcher } from "@components/ui/Switcher";
 import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
 import dynamic from "next/dynamic";
+import { ThemeContext } from "src/pages/_app";
 
 const Dropdown = dynamic(
 	async () => (await import("@components/ui/Dropdown")).Dropdown<string>,
@@ -17,35 +18,17 @@ const languages = [
 export const Controls: React.FC = () => {
 	const { i18n } = useTranslation();
 	const router = useRouter();
-	const [theme, setTheme] = useState<"dark" | "light">("dark");
+	const { theme, mutate: setTheme } = useContext(ThemeContext);
 
 	function toggleScheme() {
 		switch (theme) {
 			case "dark":
-				document.documentElement.style.setProperty("--primary-color", "#010101");
-				document.documentElement.style.setProperty(
-					"--secondary-color",
-					"#fefefe"
-				);
-				document.documentElement.style.setProperty(
-					"--secondary-button-color",
-					"#ededed"
-				);
-				document.documentElement.style.setProperty("--accent-color", "#ededed");
-				setTheme("light");
+				document.documentElement.className = "light";
+				setTheme!("light");
 				break;
 			case "light":
-				document.documentElement.style.setProperty("--primary-color", "#fefefe");
-				document.documentElement.style.setProperty(
-					"--secondary-color",
-					"#010101"
-				);
-				document.documentElement.style.setProperty(
-					"--secondary-button-color",
-					"#181818"
-				);
-				document.documentElement.style.setProperty("--accent-color", "#181818");
-				setTheme("dark");
+				document.documentElement.className = "dark";
+				setTheme!("dark");
 				break;
 		}
 	}

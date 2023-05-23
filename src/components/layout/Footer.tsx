@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "@styles/components/layout/Footer.module.scss";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import { scrollToAnchor } from "src/utils/scrollToAnchor";
+import { ThemeContext } from "src/pages/_app";
 
 const Footer: React.FC = () => {
 	const { t } = useTranslation("footer");
+	const { theme } = useContext(ThemeContext);
 
 	return (
 		<footer className={styles.container}>
 			<div className={styles.info}>
 				<Image
-					src={"/images/logo.svg"}
+					src={`/images/logo-${theme}.svg`}
 					height={50}
 					width={100}
 					alt={t("logo_alt")}

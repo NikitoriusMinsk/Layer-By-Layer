@@ -48,6 +48,26 @@ html {
 	--shadow-color: #ff4917b7;
 }
 
+:root.dark {
+	--primary-color: #fefefe;
+	--secondary-color: #010101;
+	--primary-button-color: #ff4a17;
+	--secondary-button-color: #181818;
+	--accent-color: #181818;
+	--decorative-element-color: #ff4a17;
+	--shadow-color: #ff4917b7;
+}
+
+:root.light {
+	--primary-color: #010101;
+	--secondary-color: #fefefe;
+	--primary-button-color: #ededed;
+	--secondary-button-color: #181818;
+	--accent-color: #ededed;
+	--decorative-element-color: #ff4a17;
+	--shadow-color: #ff4917b7;
+}
+
 html {
 	background-color: var(--secondary-color);
 
