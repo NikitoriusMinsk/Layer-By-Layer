@@ -10,9 +10,13 @@ import Sample from "@components/ui/Sample";
 import Algorithm from "@components/ui/Algorithm";
 import Contact from "@components/ui/Contact";
 import { Meta } from "@components/layout/Meta";
+import { useContext } from "react";
+import { ThemeContext } from "./_app";
 // import Partnership from "@components/ui/Partnership";
 
 const Home: NextPage = () => {
+	const { theme } = useContext(ThemeContext);
+
 	return (
 		<>
 			<Head>
@@ -20,7 +24,7 @@ const Home: NextPage = () => {
 				<Meta />
 				<link
 					rel="icon"
-					href="/images/logo.svg"
+					href={`/images/logo-${theme}.svg`}
 				/>
 			</Head>
 			<div className={styles.container}>
