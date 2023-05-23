@@ -16,13 +16,14 @@
 	.content {
 		display: flex;
 		flex-direction: column;
-		gap: 18px;
+		gap: 32px;
 		margin-left: var(--side-margin);
 		z-index: 2;
 		max-width: 500px;
 
 		> text {
 			position: relative;
+			line-height: 20px;
 
 			&:before {
 				content: "";

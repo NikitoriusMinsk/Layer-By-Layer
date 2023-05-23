@@ -9,14 +9,14 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		column-gap: 12px;
+		column-gap: 24px;
 		row-gap: 211px;
 
 		// border magic
 		// https://kovart.github.io/dashed-border-generator/
 		// negative stroke-dash-offset moves the start point to the right
 		.panel {
-			width: calc(25% - 9px);
+			width: calc(25% - 18px);
 
 			&:not(:last-child) {
 				&:after {
@@ -161,7 +161,12 @@
 	> div {
 		display: flex;
 		flex-direction: column;
+		gap: 8px;
 		height: 100%;
+
+		> text {
+			line-height: 20px;
+		}
 	}
 
 	.image {

@@ -21,6 +21,10 @@
 		flex-direction: column;
 		gap: 52px;
 
+		> text {
+			line-height: 20px;
+		}
+
 		button {
 			width: max-content;
 			padding: 12px 150px;
