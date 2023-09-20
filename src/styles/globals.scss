@@ -24,6 +24,10 @@ h5 {
 	margin: 0;
 }
 
+text {
+ 	line-height: 24px;
+}
+
 html {
 	&::-webkit-scrollbar {
 		width: 5px;
@@ -41,31 +45,31 @@ html {
 	--side-margin: 20%;
 	--primary-color: #fefefe;
 	--secondary-color: #010101;
-	--primary-button-color: #ff4a17;
+	--primary-button-color: #5b5dff;
 	--secondary-button-color: #181818;
 	--accent-color: #181818;
-	--decorative-element-color: #ff4a17;
-	--shadow-color: #ff4917b7;
+	--decorative-element-color: #5b5dff;
+	--shadow-color: rgba(91, 93, 255, 0.39);
 }
 
 :root.dark {
 	--primary-color: #fefefe;
 	--secondary-color: #010101;
-	--primary-button-color: #ff4a17;
+	--primary-button-color: #5b5dff;
 	--secondary-button-color: #181818;
 	--accent-color: #181818;
-	--decorative-element-color: #ff4a17;
-	--shadow-color: #ff4917b7;
+	--decorative-element-color: #5b5dff;
+	--shadow-color: rgba(91, 93, 255, 0.39);
 }
 
 :root.light {
 	--primary-color: #010101;
 	--secondary-color: #fefefe;
-	--primary-button-color: #ff4a17;
+	--primary-button-color: #5b5dff;
 	--secondary-button-color: #ededed;
 	--accent-color: #ededed;
-	--decorative-element-color: #ff4a17;
-	--shadow-color: #ff4917b7;
+	--decorative-element-color: #5b5dff;
+	--shadow-color: rgba(91, 93, 255, 0.39);
 }
 
 html {

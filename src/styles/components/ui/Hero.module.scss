@@ -58,3 +58,17 @@
 		height: calc(100vh - 74px);
 	}
 }
+
+
+.headerText {
+    background: linear-gradient(91deg,var(--primary-button-color),var(--primary-button-color) .01%,#eb73ff 47.4%,#1de6ff);
+    -webkit-background-clip: text;
+	font-size: 50px;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .description {
+	font-size: 16px;
+	line-height: 24px;
+  }

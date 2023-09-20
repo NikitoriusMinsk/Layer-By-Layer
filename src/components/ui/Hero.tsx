@@ -5,7 +5,7 @@ import Particles from "react-tsparticles";
 import { linkedCircles } from "src/utils/particleOptions";
 import useParticles from "src/utils/useParticles";
 import { scrollToAnchorByString } from "src/utils/scrollToAnchor";
-
+import Image from 'next/image';
 const Hero: React.FC = () => {
 	const { t } = useTranslation("common");
 	const { init } = useParticles();
@@ -15,15 +15,17 @@ const Hero: React.FC = () => {
 			className={styles.container}
 			id="hero"
 		>
-			<Particles
+			{/*<Particles
 				id="particles1"
 				className={styles.background}
 				init={init}
 				options={linkedCircles}
-			/>
+	/>*/}
+			<Image fill alt="bg" src="/images/header2.jpg" style={{objectFit: "contain"}}/>
 			<div className={styles.content}>
-				<h1>{t("hero.heading")}</h1>
-				<text>{t("hero.text")}</text>
+				
+				<h1 className={styles.headerText}>{t("hero.heading")}</h1>
+				<p className={styles.description}>{t("hero.text")}</p>
 				<div className={styles.buttons}>
 					<button onClick={() => scrollToAnchorByString("#order")}>
 						{t("hero.contact")}
