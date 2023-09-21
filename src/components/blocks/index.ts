@@ -6,3 +6,4 @@ export { default as Hero } from "./Hero";
 export { default as Partnership } from "./Partnership";
 export { default as Sample } from "./Sample";
 export { default as Services } from "./Services";
+export { default as FAQ } from "./FAQ";

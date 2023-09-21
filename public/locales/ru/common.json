@@ -109,6 +109,25 @@
 		"text": "text",
 		"alt": "alt"
 	},
+	"faq": {
+		"heading": "heading",
+		"subheading": "subheading",
+		"socialLink": "socials",
+		"questions": {
+			"1": "question",
+			"2": "question",
+			"3": "question",
+			"4": "question",
+			"5": "question"
+		},
+		"answers": {
+			"1": "answer",
+			"2": "answer",
+			"3": "answer",
+			"4": "answer",
+			"5": "answer"
+		}
+	},
 	"contact": {
 		"heading": "Дайте нам знать о вашем проекте!",
 		"text": "Свяжитесь с нами и превратите свои идеи в реальность!",

@@ -1,0 +1,20 @@
+.container {
+	padding: 100px var(--side-margin);
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+
+	> div {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.headings {
+		h3 {
+			> a {
+				color: var(--decorative-element-color);
+			}
+		}
+	}
+}

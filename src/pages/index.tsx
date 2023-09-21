@@ -6,6 +6,7 @@ import {
 	About,
 	Algorithm,
 	Contact,
+	FAQ,
 	FDMPrinting,
 	Hero,
 	Partnership,
@@ -36,7 +37,7 @@ const Home: NextPage = () => {
 				<Services />
 				<Sample />
 				<Algorithm />
-				{/* <Partnership /> */}
+				<FAQ />
 				<Contact />
 			</div>
 		</>
