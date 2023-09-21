@@ -12,6 +12,7 @@ import Contact from "@components/ui/Contact";
 import { Meta } from "@components/layout/Meta";
 import { useContext } from "react";
 import { ThemeContext } from "./_app";
+import Contacts from "@components/ui/ContactsMap";
 // import Partnership from "@components/ui/Partnership";
 
 const Home: NextPage = () => {
@@ -35,7 +36,8 @@ const Home: NextPage = () => {
 				<Sample />
 				<Algorithm />
 				{/* <Partnership /> */}
-				<Contact />
+				{/* <Contact /> */}
+				<Contacts />
 			</div>
 		</>
 	);
