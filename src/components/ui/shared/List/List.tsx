@@ -13,7 +13,7 @@ export default function List({ id, data, selected, setSelected, type }: any) {
 		// Access input value
 		const query = value;
 		// Create copy of item list
-		var updatedList = [...data];
+		let updatedList = [...data];
 		// Include all elements which includes the search query
 		updatedList = updatedList.filter((item) =>
 			item[type].name.toLowerCase().includes(query.toLowerCase())

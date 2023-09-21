@@ -21,6 +21,8 @@ const config = {
                 "@typescript-eslint/ban-types": "off",
                 "@typescript-eslint/no-unsafe-argument": "off",
                 "@typescript-eslint/no-unsafe-call": "off",
+                "@typescript-eslint/restrict-plus-operands": "off",
+                "@typescript-eslint/no-unsafe-return": "off",
             }
         },
     ],
