@@ -1,0 +1,30 @@
+.root{
+   @apply flex gap-4 flex-col;
+}
+.itemList{
+    @apply overflow-auto rounded-3xl mt-2 bg-secondary-2 p-2 pt-0;
+    height: 570px;
+    & li > div{
+      @apply p-4 text-accent-0 rounded-xl mt-2 flex gap-4 h-14 items-center cursor-pointer transition font-bold;  
+      &:hover{
+        @apply bg-primary
+      }
+    }
+    
+    & li:nth-child(1) {
+        margin-top:0;
+    }
+}
+.selected { 
+    @apply border-primary border-2 rounded-xl;
+}
+.selectBox{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent-0);
+   
+    position: absolute;
+    top: 20px; 
+    left: 14px;
+}

@@ -28,7 +28,8 @@
 		"**/*.ts",
 		"**/*.tsx",
 		"**/*.cjs",
-		"**/*.mjs"
+		"**/*.mjs",
+		"src/components/ui/Contacts.ts"
 	],
 	"exclude": ["node_modules"]
 }

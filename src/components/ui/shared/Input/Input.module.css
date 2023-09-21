@@ -1,0 +1,18 @@
+.root {
+  @apply py-2 px-5 w-full appearance-none transition duration-150 ease-in-out pr-10 text-accent-7 font-bold h-14 bg-secondary-2 rounded-3xl;
+}
+
+.root:focus {
+  @apply outline-none;
+}
+
+.root::placeholder {
+  font-weight: 600;
+}
+.icon{
+  @apply absolute left-5 z-10;
+  top: 17px;
+}
+.inputIcon {
+  @apply pl-12;
+}

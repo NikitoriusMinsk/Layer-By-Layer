@@ -1,0 +1,70 @@
+.fieldArea {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.textField,
+.textAreaField {
+  @apply p-3 px-5 rounded-3xl h-14;
+  width: 100%;
+  max-width: 100%;
+  outline: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #3a3a51;
+}
+
+
+.textAreaField {
+  min-height: 40px;
+  min-width: 80px;
+}
+.textFieldLabel {
+  font-weight: 700;
+  @apply text-accent-0;
+}
+.textField::placeholder,
+.textAreaField::placeholder {
+  font-weight: 700;
+  @apply text-accent-0;
+}
+.light .textField,
+.light .textAreaField {
+  background: transparent;
+  @apply text-accent-0 bg-secondary-2;
+ 
+}
+
+.light .textFieldLabel,
+.dark .textFieldLabel {
+  @apply text-accent-7 absolute;
+  
+}
+.dark .textField,
+.dark .textAreaField {
+  background: #f4f6fb;
+  @apply text-accent-9;
+}
+.dark .textFieldLabel {
+  color: #80899e;
+  font-weight: 500;
+}
+.dark .textField::placeholder,
+.dark .textAreaField::placeholder {
+  color: #80899e;
+}
+.symbolEnd {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #3a3a51;
+}
+.symbolEndPadding {
+  padding-right: 24px;
+}

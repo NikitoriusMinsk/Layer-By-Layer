@@ -1,0 +1,116 @@
+.dropdown {
+	position: relative;
+	z-index: 50;
+	display: flex;
+	min-width: 100px;
+	flex-direction: column;
+	overscroll-behavior: contain;
+	border-radius: 0.5rem;
+	border-width: 1px;
+	border-style: solid;
+	border-color: var(--border);
+    backdrop-filter: blur(10px);
+    background-color: rgb(32 34 42 / 60%);
+	padding: 0.5rem;
+	color: #ffffff;
+	box-shadow:
+	  0 10px 15px -3px rgb(0 0 0 / 0.1),
+	  0 4px 6px -4px rgb(0 0 0 / 0.1);
+	outline: none !important;
+	max-height: max-content;
+	overflow: visible;
+	--menu-origin-inline: calc(var(--popover-anchor-width) / 2);
+    @apply font-sfpro font-bold;
+  }
+  
+  :is(.dark .dropdown) {
+	border-color: hsl(204 3% 26%);
+	background-color: hsl(204 3% 18%);
+	color: hsl(204 20% 100%);
+	box-shadow:
+	  0 10px 15px -3px rgb(0 0 0 / 0.25),
+	  0 4px 6px -4px rgb(0 0 0 / 0.1);
+      
+  }
+  
+  .dropdown_item {
+    @apply cursor-pointer;
+	display: flex;
+	scroll-margin: 0.5rem;
+	align-items: center;
+	gap: 0.5rem;
+	border-radius: 0.25rem;
+	padding: 0.5rem;
+	outline: none !important;
+  }
+  
+  .dropdown_item[aria-disabled="true"] {
+	opacity: 0.25;
+	color: hsl(204 10% 10% / 0.3);
+  }
+  
+  .dropdown_item[data-active-item] {
+	background-color: var(--primary);
+	color: hsl(204 20% 100%);
+  }
+  
+  .dropdown_item:active,
+  .dropdown_item[data-active] {
+	background-color: var(--primary);
+  }
+  
+  .dropdown[data-placement^="bottom"] {
+	transform-origin: var(--menu-origin-inline) -11px;
+  }
+  
+  .dropdown[data-placement^="top"] {
+	transform-origin: var(--menu-origin-inline) calc(100% + 11px);
+  }
+  
+  :is(.dark .menu-item[aria-disabled="true"]) {
+	color: hsl(204 20% 100% / 0.3);
+  }
+
+  .button {
+    @apply font-sfpro font-medium;
+	@apply transition duration-300;
+	display: flex;
+	height: 2.5rem;
+	touch-action: none;
+	user-select: none;
+	align-items: center;
+	justify-content: center;
+	gap: 0.25rem;
+	white-space: nowrap;
+	border-radius: 0.5rem;
+	border-style: none;
+	background-color: var(--primary);
+	padding-left: 1rem;
+	padding-right: 1rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: hsl(204 20% 100%);
+	text-decoration-line: none;
+	outline-width: 2px;
+	outline-offset: 2px;
+	outline-color: rgba(91,93,255,.4);
+  }
+  
+  .button:hover {
+	background-color: rgba(91,93,255,.72);
+	transform: scale(0.95);
+  }
+  
+  .button[aria-disabled="true"] {
+	opacity: 0.5;
+  }
+  
+  .button[data-focus-visible] {
+	outline-style: solid;
+  }
+  
+  @media (min-width: 640px) {
+	.button {
+	  gap: 0.5rem;
+	}
+  }

@@ -9,7 +9,11 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@ariakit/react": "^0.3.2",
 		"@lottiefiles/react-lottie-player": "^3.5.3",
+		"@react-google-maps/api": "^2.19.2",
+		"clsx": "^2.0.0",
+		"formik": "^2.4.5",
 		"framer-motion": "^10.12.4",
 		"i18next": "^22.4.15",
 		"next": "^13.2.4",
@@ -17,6 +21,8 @@
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-i18next": "^12.2.2",
+		"react-icons": "^4.11.0",
+		"react-merge-refs": "^2.0.2",
 		"react-tsparticles": "^2.9.3",
 		"sass": "^1.62.1",
 		"tsparticles": "^2.9.3",
