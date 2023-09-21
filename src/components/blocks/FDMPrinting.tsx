@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@styles/components/ui/FDMPrinting.module.scss";
+import styles from "@styles/components/blocks/FDMPrinting.module.scss";
 import { useTranslation } from "next-i18next";
 import { Player } from "@lottiefiles/react-lottie-player";
 import { scrollToAnchorByString } from "src/utils/scrollToAnchor";

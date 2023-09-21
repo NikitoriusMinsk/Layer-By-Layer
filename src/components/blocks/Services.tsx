@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@styles/components/ui/Services.module.scss";
+import styles from "@styles/components/blocks/Services.module.scss";
 import { useTranslation } from "next-i18next";
 import { Player } from "@lottiefiles/react-lottie-player";
 

@@ -2,17 +2,19 @@ import styles from "@styles/pages/Home.module.scss";
 import { type GetStaticProps, type NextPage } from "next";
 import Head from "next/head";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import Hero from "@components/ui/Hero";
-import About from "@components/ui/About";
-import FDMPrinting from "@components/ui/FDMPrinting";
-import Services from "@components/ui/Services";
-import Sample from "@components/ui/Sample";
-import Algorithm from "@components/ui/Algorithm";
-import Contact from "@components/ui/Contact";
+import {
+	About,
+	Algorithm,
+	Contact,
+	FDMPrinting,
+	Hero,
+	Partnership,
+	Sample,
+	Services,
+} from "@components/blocks";
 import { Meta } from "@components/layout/Meta";
 import { useContext } from "react";
 import { ThemeContext } from "./_app";
-// import Partnership from "@components/ui/Partnership";
 
 const Home: NextPage = () => {
 	const { theme } = useContext(ThemeContext);

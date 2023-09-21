@@ -11,7 +11,7 @@ export interface DropdownProps<T> {
 	onSelected: (value: DropdownProps<T>["items"][number]["value"]) => void;
 }
 
-export const Dropdown = <T,>(props: DropdownProps<T>) => {
+const Dropdown = <T,>(props: DropdownProps<T>) => {
 	const { items, defaultSelected, onSelected } = props;
 	const [isOpen, setIsOpen] = useState(false);
 	const [selectedItem, setSelectedItem] = useState(items[defaultSelected ?? 0]);
@@ -68,3 +68,5 @@ export const Dropdown = <T,>(props: DropdownProps<T>) => {
 		</div>
 	);
 };
+
+export default Dropdown;

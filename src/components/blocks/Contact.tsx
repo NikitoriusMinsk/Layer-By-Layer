@@ -1,12 +1,12 @@
 import React, { DragEvent, FormEvent, Ref, useRef, useState } from "react";
-import styles from "@styles/components/ui/Contact.module.scss";
+import styles from "@styles/components/blocks/Contact.module.scss";
 import Image from "next/image";
 import { useTranslation } from "next-i18next";
 import useParticles from "src/utils/useParticles";
 import Particles from "react-tsparticles";
 import { linkedCircles } from "src/utils/particleOptions";
 import { motion } from "framer-motion";
-import { FileInput } from "./FileInput";
+import { FileInput } from "@components/ui";
 
 const Contact: React.FC = () => {
 	const { t } = useTranslation("common");

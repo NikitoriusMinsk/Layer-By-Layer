@@ -1,14 +1,13 @@
 import React, { useContext, useState } from "react";
-import { Switcher } from "@components/ui/Switcher";
+import { Switcher } from "@components/ui";
 import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
 import dynamic from "next/dynamic";
 import { ThemeContext } from "src/pages/_app";
 
-const Dropdown = dynamic(
-	async () => (await import("@components/ui/Dropdown")).Dropdown<string>,
-	{ ssr: false }
-);
+const Dropdown = dynamic(async () => (await import("@components/ui")).Dropdown<string>, {
+	ssr: false,
+});
 
 const languages = [
 	{ title: "EN", value: "en" },

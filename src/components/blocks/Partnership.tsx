@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@styles/components/ui/Partnership.module.scss";
+import styles from "@styles/components/blocks/Partnership.module.scss";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 

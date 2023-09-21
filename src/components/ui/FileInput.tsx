@@ -7,7 +7,7 @@ interface FileInputProps {
 	alt: string;
 }
 
-export const FileInput: React.FC<FileInputProps> = (props) => {
+const FileInput: React.FC<FileInputProps> = (props) => {
 	const { text, alt, textDrag } = props;
 	const [fileCount, setFileCount] = useState<number | undefined>(0);
 	const [draggedOver, setDraggedOver] = useState(false);
@@ -58,3 +58,5 @@ export const FileInput: React.FC<FileInputProps> = (props) => {
 		</label>
 	);
 };
+
+export default FileInput;

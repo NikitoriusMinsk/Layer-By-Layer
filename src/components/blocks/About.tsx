@@ -1,6 +1,6 @@
 import { useTranslation } from "next-i18next";
 import React from "react";
-import styles from "@styles/components/ui/About.module.scss";
+import styles from "@styles/components/blocks/About.module.scss";
 import { Player } from "@lottiefiles/react-lottie-player";
 
 const About: React.FC = () => {

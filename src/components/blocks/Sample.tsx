@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@styles/components/ui/Sample.module.scss";
+import styles from "@styles/components/blocks/Sample.module.scss";
 import { useTranslation } from "next-i18next";
 import { linkedCircles } from "src/utils/particleOptions";
 import Particles from "react-tsparticles";

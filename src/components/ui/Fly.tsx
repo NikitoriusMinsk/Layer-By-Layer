@@ -13,7 +13,7 @@ const springOptionsInner: SpringOptions = {
 	damping: 9,
 };
 
-export const Fly: React.FC<{ visible: boolean }> = (props) => {
+const Fly: React.FC<{ visible: boolean }> = (props) => {
 	const { visible } = props;
 	const refOuter = useRef<HTMLDivElement>(null);
 	const refInner = useRef<HTMLDivElement>(null);
@@ -48,3 +48,5 @@ export const Fly: React.FC<{ visible: boolean }> = (props) => {
 		</>
 	);
 };
+
+export default Fly;

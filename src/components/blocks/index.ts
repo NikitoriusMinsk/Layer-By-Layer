@@ -1,0 +1,8 @@
+export { default as About } from "./About";
+export { default as Algorithm } from "./Algorithm";
+export { default as Contact } from "./Contact";
+export { default as FDMPrinting } from "./FDMPrinting";
+export { default as Hero } from "./Hero";
+export { default as Partnership } from "./Partnership";
+export { default as Sample } from "./Sample";
+export { default as Services } from "./Services";

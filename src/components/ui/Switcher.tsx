@@ -7,7 +7,7 @@ interface SwitcherProps {
 	defaultOn?: boolean;
 }
 
-export const Switcher: React.FC<SwitcherProps> = (props) => {
+const Switcher: React.FC<SwitcherProps> = (props) => {
 	const { onSwitch, defaultOn } = props;
 	const [isOn, setIsOn] = useState(defaultOn);
 
@@ -36,3 +36,5 @@ export const Switcher: React.FC<SwitcherProps> = (props) => {
 		</div>
 	);
 };
+
+export default Switcher;
