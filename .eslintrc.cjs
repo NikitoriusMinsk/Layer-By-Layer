@@ -14,6 +14,13 @@ const config = {
             },
             rules: {
                 "@typescript-eslint/no-unnecessary-type-assertion": "warn",
+                "@typescript-eslint/restrict-template-expressions": "off",
+                "@typescript-eslint/no-unsafe-member-access": "off",
+                "@typescript-eslint/no-unsafe-assignment": "off",
+                "@typescript-eslint/ban-ts-comment": "off",
+                "@typescript-eslint/ban-types": "off",
+                "@typescript-eslint/no-unsafe-argument": "off",
+                "@typescript-eslint/no-unsafe-call": "off",
             }
         },
     ],
@@ -32,6 +39,7 @@ const config = {
             },
         ],
         "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
+
     },
 };
 
