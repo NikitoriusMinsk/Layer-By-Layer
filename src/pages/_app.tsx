@@ -1,5 +1,5 @@
 import { type AppType } from "next/dist/shared/lib/utils";
-import "@styles/globals.scss";
+import "@styles/global.scss";
 import { appWithTranslation } from "next-i18next";
 import MainLayout from "@components/layout/MainLayout";
 import { Montserrat } from "next/font/google";
