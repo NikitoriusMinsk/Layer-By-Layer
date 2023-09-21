@@ -8,3 +8,4 @@ export {
 	AccordionItem,
 	AccordionTrigger,
 } from "./Accordion";
+export { Tabs, TabsContent, TabsList, TabsTrigger } from "./Tabs";

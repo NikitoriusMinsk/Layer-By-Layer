@@ -16,6 +16,7 @@ import {
 import { Meta } from "@components/layout/Meta";
 import { useContext } from "react";
 import { ThemeContext } from "./_app";
+import Printer from "@components/blocks/Printer";
 
 const Home: NextPage = () => {
 	const { theme } = useContext(ThemeContext);
@@ -34,6 +35,7 @@ const Home: NextPage = () => {
 				<Hero />
 				<About />
 				<FDMPrinting />
+				<Printer />
 				<Services />
 				<Sample />
 				<Algorithm />

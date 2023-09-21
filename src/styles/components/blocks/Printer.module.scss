@@ -1,0 +1,74 @@
+.container {
+	padding: 100px var(--side-margin);
+	display: flex;
+	flex-direction: column;
+	gap: 48px;
+
+	.list {
+		background-color: unset;
+		.trigger {
+			background-color: unset;
+			color: unset;
+			border-bottom: 1px solid transparent;
+			border-radius: 0;
+			transition: all 0.3s ease-in-out;
+		}
+		.trigger[data-state="active"] {
+			color: white;
+			border-bottom: 1px solid var(--decorative-element-color);
+		}
+	}
+
+	.printerTab {
+		display: flex;
+		flex-direction: row;
+		gap: 8px;
+		width: 100%;
+		.col {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+		}
+		.col:first-child {
+			.image {
+				position: relative;
+				width: 100%;
+				height: 400px;
+				object-fit: cover;
+			}
+			.details {
+				display: flex;
+				flex-direction: row;
+				gap: 32px;
+				align-items: flex-end;
+
+				div {
+					display: flex;
+					flex-direction: column;
+					gap: 8px;
+					h3 {
+						margin-bottom: 24px;
+					}
+				}
+			}
+		}
+		.col:last-child {
+			gap: 24px;
+			.item {
+				display: flex;
+				flex-direction: column;
+				gap: 8px;
+				padding-bottom: 8px;
+				border-bottom: 1px solid var(--accent-color);
+				h4 {
+					color: var(--primary-color);
+					opacity: 40%;
+					font-size: 16px;
+				}
+				span {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}

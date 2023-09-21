@@ -13,7 +13,10 @@ const FAQ: React.FC = () => {
 	const { t } = useTranslation("common");
 
 	return (
-		<div className={styles.container}>
+		<div
+			className={styles.container}
+			id="FAQ"
+		>
 			<div className={styles.headings}>
 				<h2>{t("faq.heading")}</h2>
 				<h3>

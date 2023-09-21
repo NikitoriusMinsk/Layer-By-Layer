@@ -29,6 +29,46 @@
 		"text": "text",
 		"button": "button"
 	},
+	"printer": {
+		"tabs": {
+			"printer": {
+				"heading": "printer",
+				"img": "alt",
+				"dimensions": "dimensions",
+				"volume": "volume",
+				"width": "width",
+				"depth": "depth",
+				"height": "height",
+				"weight": "weight",
+				"process": {
+					"heading": "heading",
+					"text": "text"
+				},
+				"resolution": {
+					"heading": "heading",
+					"text": "text"
+				},
+				"media": {
+					"heading": "heading",
+					"text": "text"
+				},
+				"geometry": {
+					"heading": "heading",
+					"text": "text"
+				},
+				"bed": {
+					"heading": "heading",
+					"text": "text"
+				}
+			},
+			"materials": {
+				"heading": "materials"
+			},
+			"details": {
+				"heading": "details"
+			}
+		}
+	},
 	"services": {
 		"heading": "heading",
 		"1": {
@@ -88,6 +128,25 @@
 		},
 		"text": "text",
 		"alt": "alt"
+	},
+	"faq": {
+		"heading": "heading",
+		"subheading": "subheading",
+		"socialLink": "socials",
+		"questions": {
+			"1": "question",
+			"2": "question",
+			"3": "question",
+			"4": "question",
+			"5": "question"
+		},
+		"answers": {
+			"1": "answer",
+			"2": "answer",
+			"3": "answer",
+			"4": "answer",
+			"5": "answer"
+		}
 	},
 	"contact": {
 		"heading": "heading",
