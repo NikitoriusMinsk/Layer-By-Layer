@@ -55,9 +55,10 @@ const PrinterTab: React.FC = () => {
 			<div className={styles.col}>
 				<div className={styles.image}>
 					<Image
-						src={"/images/placeholder.png"}
+						src={"/images/printer/1.png"}
 						fill
 						alt={t("printer.tabs.printer.img")}
+						style={{ objectFit: "scale-down" }}
 					/>
 				</div>
 				<div className={styles.details}>
@@ -71,9 +72,10 @@ const PrinterTab: React.FC = () => {
 			<div className={styles.col}>
 				<div className={styles.image}>
 					<Image
-						src={"/images/placeholder.png"}
+						src={"/images/printer/2.png"}
 						fill
 						alt={t("printer.tabs.printer.img")}
+						style={{ objectFit: "scale-down" }}
 					/>
 				</div>
 				<div className={styles.details}>

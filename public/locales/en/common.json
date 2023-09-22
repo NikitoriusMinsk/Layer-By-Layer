@@ -62,10 +62,23 @@
 				}
 			},
 			"materials": {
-				"heading": "materials"
+				"heading": "materials",
+				"1": "ABS",
+				"2": "PLA",
+				"3": "HIPS",
+				"4": "PA-6",
+				"5": "Pa-12",
+				"6": "Composite"
 			},
 			"details": {
-				"heading": "details"
+				"heading": "details",
+				"text": {
+					"1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit qui maiores voluptatum consectetur praesentium quidem, animi, repellendus hic neque excepturi molestias ullam perferendis consequatur sed, mollitia esse illum numquam. Libero?",
+					"2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit qui maiores voluptatum consectetur praesentium quidem, animi, repellendus hic neque excepturi molestias ullam perferendis consequatur sed, mollitia esse illum numquam. Libero?",
+					"3": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit qui maiores voluptatum consectetur praesentium quidem, animi, repellendus hic neque excepturi molestias ullam perferendis consequatur sed, mollitia esse illum numquam. Libero?",
+					"4": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit qui maiores voluptatum consectetur praesentium quidem, animi, repellendus hic neque excepturi molestias ullam perferendis consequatur sed, mollitia esse illum numquam. Libero?",
+					"5": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit qui maiores voluptatum consectetur praesentium quidem, animi, repellendus hic neque excepturi molestias ullam perferendis consequatur sed, mollitia esse illum numquam. Libero?"
+				}
 			}
 		}
 	},
