@@ -4,15 +4,19 @@
 	flex-direction: column;
 	gap: 48px;
 
-	> div {
+	.headings {
 		display: flex;
 		flex-direction: column;
-		gap: 24px;
-	}
 
-	.headings {
-		h3 {
-			> a {
+		.subheading {
+			display: flex;
+			flex-direction: row;
+
+			gap: 8px;
+			h3 {
+				opacity: 40%;
+			}
+			a {
 				color: var(--decorative-element-color);
 			}
 		}

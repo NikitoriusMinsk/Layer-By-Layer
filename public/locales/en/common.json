@@ -163,5 +163,29 @@
 			"drag": "drag"
 		},
 		"submit": "submit"
+	},
+	"map": {
+		"heading": "contact",
+		"subheading": "subheading",
+		"working_hours": {
+			"heading": "heading",
+			"weekdays": {
+				"days": "Mon - Fri",
+				"time": "10am - 10pm"
+			},
+			"weekends": {
+				"days": "wekends",
+				"time": "closed"
+			}
+		},
+		"address": {
+			"heading": "address",
+			"line1": "pupkina 12",
+			"line2": "zalupkina 3"
+		},
+		"support": {
+			"heading": "support",
+			"phone": "+133785648244"
+		}
 	}
 }

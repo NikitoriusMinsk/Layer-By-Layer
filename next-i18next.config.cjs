@@ -9,6 +9,7 @@ module.exports = {
         locales: ["en", "ru", "default"],
         defaultLocale: "default",
     },
+    fallbackLng: 'default',
     ns: ['common', 'footer', 'header'],
     localePath: path.resolve("./public/locales"),
     serializeConfig: false,

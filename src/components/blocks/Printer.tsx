@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "@styles/components/blocks/Printer.module.scss";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@components/ui";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 
 const Printer: React.FC = () => {

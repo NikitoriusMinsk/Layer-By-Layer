@@ -5,11 +5,10 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import {
 	About,
 	Algorithm,
-	Contact,
+	ContactMap,
 	FAQ,
 	FDMPrinting,
 	Hero,
-	Partnership,
 	Sample,
 	Services,
 } from "@components/blocks";
@@ -40,7 +39,7 @@ const Home: NextPage = () => {
 				<Sample />
 				<Algorithm />
 				<FAQ />
-				<Contact />
+				<ContactMap />
 			</div>
 		</>
 	);
@@ -49,11 +48,10 @@ const Home: NextPage = () => {
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
 	return {
 		props: {
-			...(await serverSideTranslations(locale ?? "ru", [
+			...(await serverSideTranslations(locale ?? "default", [
 				"common",
 				"header",
 				"footer",
-				"meta",
 			])),
 			// Will be passed to the page component as props
 		},

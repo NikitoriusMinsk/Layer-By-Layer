@@ -6,7 +6,7 @@ import {
 } from "@components/ui";
 import React from "react";
 import styles from "@styles/components/blocks/FAQ.module.scss";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { scrollToAnchor } from "src/utils/scrollToAnchor";
 
 const FAQ: React.FC = () => {
@@ -19,15 +19,15 @@ const FAQ: React.FC = () => {
 		>
 			<div className={styles.headings}>
 				<h2>{t("faq.heading")}</h2>
-				<h3>
-					{t("faq.subheading")}{" "}
+				<div className={styles.subheading}>
+					<h3>{t("faq.subheading")} </h3>
 					<a
 						href="#order"
 						onClick={scrollToAnchor}
 					>
 						{t("faq.socialLink")}
 					</a>
-				</h3>
+				</div>
 			</div>
 
 			<Accordion
