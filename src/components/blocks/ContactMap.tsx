@@ -124,7 +124,7 @@ const ContactMap: React.FC = () => {
 							</div>
 							<div>
 								<h3>{t("map.support.heading")}</h3>
-								<p>howchange@gmail.com</p>
+								<p>{t("map.support.email")}</p>
 								<p>{t("map.support.phone")}</p>
 							</div>
 						</div>
