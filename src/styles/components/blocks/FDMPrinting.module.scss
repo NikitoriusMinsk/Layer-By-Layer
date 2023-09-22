@@ -1,7 +1,7 @@
 .container {
 	display: flex;
 	flex-direction: row;
-	height: 50vh;
+	align-items: center;
 
 	.image {
 		* {
@@ -51,6 +51,10 @@
 		.info {
 			text {
 				text-align: center;
+			}
+
+			button {
+				padding: 12px 110px;
 			}
 		}
 	}

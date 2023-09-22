@@ -37,10 +37,10 @@ const Printer: React.FC = () => {
 					<PrinterTab />
 				</TabsContent>
 				<TabsContent value="materials">
-					<PrinterTab />
+					<MaterialsTab />
 				</TabsContent>
 				<TabsContent value="details">
-					<PrinterTab />
+					<DetailsTab />
 				</TabsContent>
 			</Tabs>
 		</div>
@@ -51,7 +51,7 @@ const PrinterTab: React.FC = () => {
 	const { t } = useTranslation("common");
 
 	return (
-		<div className={styles.printerTab}>
+		<div className={`${styles.tab} ${styles.printer}`}>
 			<div className={styles.col}>
 				<div className={styles.image}>
 					<Image
@@ -61,44 +61,83 @@ const PrinterTab: React.FC = () => {
 					/>
 				</div>
 				<div className={styles.details}>
-					<div>
-						<h3>{t("printer.tabs.printer.dimensions")}</h3>
-						<span>{t("printer.tabs.printer.width")}: 1325 mm</span>
-						<span>{t("printer.tabs.printer.depth")}: 900 mm</span>
-						<span>{t("printer.tabs.printer.height")}: 2000 mm</span>
-						<span>{t("printer.tabs.printer.weight")}: 530 kg / 1170lbs</span>
-					</div>
-					<div>
-						<h3>{t("printer.tabs.printer.volume")}</h3>
-						<span>{t("printer.tabs.printer.width")}: 1325 mm</span>
-						<span>{t("printer.tabs.printer.depth")}: 900 mm</span>
-						<span>{t("printer.tabs.printer.height")}: 2000 mm</span>
-					</div>
+					<h3>{t("printer.tabs.printer.dimensions")}</h3>
+					<span>{t("printer.tabs.printer.width")}: 1325 mm</span>
+					<span>{t("printer.tabs.printer.depth")}: 900 mm</span>
+					<span>{t("printer.tabs.printer.height")}: 2000 mm</span>
+					<span>{t("printer.tabs.printer.weight")}: 530 kg / 1170lbs</span>
+				</div>
+			</div>
+			<div className={styles.col}>
+				<div className={styles.image}>
+					<Image
+						src={"/images/placeholder.png"}
+						fill
+						alt={t("printer.tabs.printer.img")}
+					/>
+				</div>
+				<div className={styles.details}>
+					<h3>{t("printer.tabs.printer.volume")}</h3>
+					<span>{t("printer.tabs.printer.width")}: 1325 mm</span>
+					<span>{t("printer.tabs.printer.depth")}: 900 mm</span>
+					<span>{t("printer.tabs.printer.height")}: 2000 mm</span>
 				</div>
 			</div>
 			<div className={styles.col}>
 				<div className={styles.item}>
-					<h4>{t("printer.tabs.printer.process.heading")}</h4>
+					<h3>{t("printer.tabs.printer.process.heading")}</h3>
 					<span>{t("printer.tabs.printer.process.text")}</span>
 				</div>
 				<div className={styles.item}>
-					<h4>{t("printer.tabs.printer.resolution.heading")}</h4>
+					<h3>{t("printer.tabs.printer.resolution.heading")}</h3>
 					<span>{t("printer.tabs.printer.resolution.text")}</span>
 				</div>
 				<div className={styles.item}>
-					<h4>{t("printer.tabs.printer.media.heading")}</h4>
+					<h3>{t("printer.tabs.printer.media.heading")}</h3>
 					<span>{t("printer.tabs.printer.media.text")}</span>
 				</div>
 				<div className={styles.item}>
-					<h4>{t("printer.tabs.printer.geometry.heading")}</h4>
+					<h3>{t("printer.tabs.printer.geometry.heading")}</h3>
 					<span>{t("printer.tabs.printer.geometry.text")}</span>
 				</div>
 				<div className={styles.item}>
-					<h4>{t("printer.tabs.printer.bed.heading")}</h4>
+					<h3>{t("printer.tabs.printer.bed.heading")}</h3>
 					<span>{t("printer.tabs.printer.bed.text")}</span>
 				</div>
 			</div>
 		</div>
 	);
 };
+
+const MaterialsTab: React.FC = () => {
+	const { t } = useTranslation("common");
+
+	return (
+		<div className={`${styles.tab} ${styles.materials}`}>
+			<h3>{t("printer.tabs.materials.heading")}</h3>
+			<span>{t("printer.tabs.materials.1")}</span>
+			<span>{t("printer.tabs.materials.2")}</span>
+			<span>{t("printer.tabs.materials.3")}</span>
+			<span>{t("printer.tabs.materials.4")}</span>
+			<span>{t("printer.tabs.materials.5")}</span>
+			<span>{t("printer.tabs.materials.6")}</span>
+		</div>
+	);
+};
+
+const DetailsTab: React.FC = () => {
+	const { t } = useTranslation("common");
+
+	return (
+		<div className={`${styles.tab} ${styles.details}`}>
+			<span>{t("printer.tabs.details.heading")}</span>
+			<p>{t("printer.tabs.details.text.1")}</p>
+			<p>{t("printer.tabs.details.text.2")}</p>
+			<p>{t("printer.tabs.details.text.3")}</p>
+			<p>{t("printer.tabs.details.text.4")}</p>
+			<p>{t("printer.tabs.details.text.5")}</p>
+		</div>
+	);
+};
+
 export default Printer;

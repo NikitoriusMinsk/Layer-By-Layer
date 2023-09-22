@@ -6,67 +6,140 @@
 
 	.list {
 		background-color: unset;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-bottom: 12px;
+
 		.trigger {
+			width: 100%;
 			background-color: unset;
 			color: unset;
-			border-bottom: 1px solid transparent;
+			border-bottom: 1px solid var(--accent-color);
 			border-radius: 0;
 			transition: all 0.3s ease-in-out;
 		}
+
 		.trigger[data-state="active"] {
 			color: white;
 			border-bottom: 1px solid var(--decorative-element-color);
 		}
 	}
 
-	.printerTab {
-		display: flex;
-		flex-direction: row;
-		gap: 8px;
-		width: 100%;
-		.col {
-			display: flex;
-			flex-direction: column;
-			flex: 1;
-		}
-		.col:first-child {
-			.image {
-				position: relative;
-				width: 100%;
-				height: 400px;
-				object-fit: cover;
-			}
-			.details {
-				display: flex;
-				flex-direction: row;
-				gap: 32px;
-				align-items: flex-end;
+	.tab {
+		min-height: 550px;
 
-				div {
+		h3 {
+			font-size: 14px;
+			opacity: 40%;
+		}
+
+		&.printer {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 16px;
+			width: 100%;
+
+			.col {
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+				min-width: 300px;
+			}
+
+			.col:nth-child(1),
+			.col:nth-child(2) {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+				.image {
+					position: relative;
+					width: 100%;
+					height: 400px;
+					object-fit: cover;
+				}
+
+				.details {
+					gap: 32px;
 					display: flex;
 					flex-direction: column;
 					gap: 8px;
+
 					h3 {
-						margin-bottom: 24px;
+						margin-bottom: 12px;
+					}
+
+					span {
+						font-size: 14px;
+					}
+				}
+			}
+
+			.col:last-child {
+				gap: 24px;
+
+				.item {
+					display: flex;
+					flex-direction: column;
+					gap: 8px;
+					padding-bottom: 8px;
+					border-bottom: 1px solid var(--accent-color);
+
+					h3 {
+						color: var(--primary-color);
+						opacity: 40%;
+					}
+
+					span {
+						font-size: 24px;
 					}
 				}
 			}
 		}
-		.col:last-child {
+
+		&.materials {
+			display: flex;
+			flex-direction: column;
 			gap: 24px;
-			.item {
-				display: flex;
-				flex-direction: column;
-				gap: 8px;
-				padding-bottom: 8px;
+
+			span {
+				font-size: 24px;
 				border-bottom: 1px solid var(--accent-color);
-				h4 {
-					color: var(--primary-color);
-					opacity: 40%;
-					font-size: 16px;
-				}
-				span {
-					font-size: 24px;
+				max-width: 425px;
+				padding-bottom: 8px;
+			}
+		}
+
+		&.details {
+			display: flex;
+			flex-direction: column;
+			p {
+				max-width: 600px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.container {
+		.tab {
+			&.printer {
+				.col:nth-child(1),
+				.col:nth-child(2) {
+					display: flex;
+					flex-direction: row-reverse;
+					justify-content: space-between;
+
+					.image {
+						flex: 0.8;
+						height: 200px;
+					}
+
+					.details {
+						flex: 1;
+					}
 				}
 			}
 		}
