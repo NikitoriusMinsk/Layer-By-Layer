@@ -17,20 +17,20 @@ const languages = [
 export const Controls: React.FC = () => {
 	const { i18n } = useTranslation();
 	const router = useRouter();
-	const { theme, mutate: setTheme } = useContext(ThemeContext);
+	// const { theme, mutate: setTheme } = useContext(ThemeContext);
 
-	function toggleScheme() {
-		switch (theme) {
-			case "dark":
-				document.documentElement.className = "light";
-				setTheme!("light");
-				break;
-			case "light":
-				document.documentElement.className = "dark";
-				setTheme!("dark");
-				break;
-		}
-	}
+	// function toggleScheme() {
+	// 	switch (theme) {
+	// 		case "dark":
+	// 			document.documentElement.className = "light";
+	// 			setTheme!("light");
+	// 			break;
+	// 		case "light":
+	// 			document.documentElement.className = "dark";
+	// 			setTheme!("dark");
+	// 			break;
+	// 	}
+	// }
 
 	return (
 		<>
@@ -47,7 +47,7 @@ export const Controls: React.FC = () => {
 					(lang) => lang.value === i18n.language
 				)}
 			/>
-			<Switcher onSwitch={toggleScheme} />
+			{/* <Switcher onSwitch={togg    leScheme} /> */}
 		</>
 	);
 };
