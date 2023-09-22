@@ -31,7 +31,10 @@ const ContactMap: React.FC = () => {
 	if (!isLoaded) return <></>;
 
 	return (
-		<div className={styles.container}>
+		<div
+			className={styles.container}
+			id="order"
+		>
 			<div className={styles.headings}>
 				<h2>{t("map.heading")}</h2>
 				<h3>{t("map.subheading")}</h3>

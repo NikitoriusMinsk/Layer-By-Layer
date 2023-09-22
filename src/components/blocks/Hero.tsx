@@ -1,12 +1,11 @@
 import { useTranslation } from "next-i18next";
 import React from "react";
 import styles from "@styles/components/blocks/Hero.module.scss";
-import useParticles from "src/utils/useParticles";
 import { scrollToAnchorByString } from "src/utils/scrollToAnchor";
 import Image from "next/image";
+
 const Hero: React.FC = () => {
 	const { t } = useTranslation("common");
-	const { init } = useParticles();
 
 	return (
 		<div
@@ -16,7 +15,7 @@ const Hero: React.FC = () => {
 			<Image
 				fill
 				alt="bg"
-				src="/images/header2.jpg"
+				src="/images/hero/printer.png"
 				style={{ objectFit: "contain" }}
 			/>
 			<div className={styles.content}>

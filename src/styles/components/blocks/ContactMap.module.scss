@@ -2,10 +2,12 @@
 	display: flex;
 	flex-direction: column;
 	gap: 48px;
-	padding: 0 var(--side-margin);
-	border-radius: 18px;
+
+	// border-radius: 18px;
 
 	.headings {
+		padding: 0 var(--side-margin);
+
 		h3 {
 			opacity: 40%;
 		}
@@ -15,6 +17,7 @@
 		display: flex;
 		flex-direction: column;
 		position: relative;
+		justify-content: flex-end;
 
 		.overlay {
 			position: absolute;
@@ -23,7 +26,11 @@
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: flex-end;
-			width: 100%;
+			width: calc(100% - 24px);
+			height: calc(100% - 24px);
+			bottom: 12px;
+			right: 12px;
+			padding: 0 var(--side-margin);
 
 			.details {
 				padding: 12px 48px;
@@ -36,6 +43,7 @@
 				gap: 24px;
 				justify-content: center;
 				align-items: center;
+				height: calc(100% - 24px);
 
 				> div {
 					display: flex;
@@ -71,8 +79,8 @@
 					border-radius: 18px;
 
 					.image {
-						height: 32px;
-						width: 32px;
+						min-height: 32px;
+						min-width: 32px;
 					}
 
 					.info {
@@ -86,8 +94,8 @@
 					}
 
 					.arrow {
-						height: 16px;
-						width: 16px;
+						min-height: 16px;
+						min-width: 16px;
 					}
 				}
 			}
@@ -103,13 +111,14 @@
 
 				.socials {
 					flex-direction: column;
+					flex-wrap: wrap;
 				}
 			}
 		}
 	}
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
 	.container {
 		.map {
 			gap: 24px;
@@ -122,6 +131,9 @@
 				position: relative;
 				flex-direction: column;
 				gap: 24px;
+				width: 100%;
+				right: 0;
+				bottom: 0;
 
 				.socials {
 					flex-direction: row;
@@ -130,6 +142,7 @@
 					.button {
 						flex: 1;
 						justify-content: space-between;
+						min-width: calc(50% - 12px);
 					}
 				}
 
@@ -146,6 +159,20 @@
 						div {
 							flex: 1;
 						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.container {
+		.map {
+			.overlay {
+				.socials {
+					.button {
+						min-width: unset;
 					}
 				}
 			}

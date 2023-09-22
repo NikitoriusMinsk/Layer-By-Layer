@@ -36,7 +36,7 @@ const MobileHeader: React.FC = () => {
 				<Image
 					src={`/images/logo-${theme}.svg`}
 					height={30}
-					width={120}
+					width={70}
 					alt={t("logo_alt")}
 				/>
 			</a>
