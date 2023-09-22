@@ -39,6 +39,12 @@ const Header: React.FC = () => {
 				</a>
 				<a
 					onClick={scrollToAnchor}
+					href="#printer"
+				>
+					{t("printer")}
+				</a>
+				<a
+					onClick={scrollToAnchor}
 					href="#services"
 				>
 					{t("services")}
@@ -55,12 +61,12 @@ const Header: React.FC = () => {
 				>
 					{t("algorithm")}
 				</a>
-				{/* <a
+				<a
 					onClick={scrollToAnchor}
-					href="#partnership"
+					href="#faq"
 				>
-					{t("partnership")}
-				</a> */}
+					{t("faq")}
+				</a>
 				<a
 					onClick={scrollToAnchor}
 					href="#order"

@@ -15,7 +15,7 @@ const FAQ: React.FC = () => {
 	return (
 		<div
 			className={styles.container}
-			id="FAQ"
+			id="faq"
 		>
 			<div className={styles.headings}>
 				<h2>{t("faq.heading")}</h2>

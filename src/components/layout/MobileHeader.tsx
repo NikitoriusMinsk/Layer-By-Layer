@@ -81,6 +81,12 @@ const MobileHeader: React.FC = () => {
 					{t("fdm_printing")}
 				</a>
 				<a
+					onClick={scrollToAnchor}
+					href="#printer"
+				>
+					{t("printer")}
+				</a>
+				<a
 					onClick={handleNavigate}
 					href="#services"
 				>
@@ -98,12 +104,12 @@ const MobileHeader: React.FC = () => {
 				>
 					{t("algorithm")}
 				</a>
-				{/* <a
-							onClick={handleNavigate}
-							href="#partnership"
-						>
-							{t("partnership")}
-						</a> */}
+				<a
+					onClick={scrollToAnchor}
+					href="#faq"
+				>
+					{t("faq")}
+				</a>
 				<a
 					onClick={handleNavigate}
 					href="#order"
