@@ -63,10 +63,10 @@ const PrinterTab: React.FC = () => {
 				</div>
 				<div className={styles.details}>
 					<h3>{t("printer.tabs.printer.dimensions")}</h3>
-					<span>{t("printer.tabs.printer.width")}: 1325 mm</span>
-					<span>{t("printer.tabs.printer.depth")}: 900 mm</span>
-					<span>{t("printer.tabs.printer.height")}: 2000 mm</span>
-					<span>{t("printer.tabs.printer.weight")}: 530 kg / 1170lbs</span>
+					<span>{t("printer.tabs.printer.width")}: 85 cm</span>
+					<span>{t("printer.tabs.printer.depth")}: 105 cm</span>
+					<span>{t("printer.tabs.printer.height")}: 165 cm</span>
+					<span>{t("printer.tabs.printer.weight")}: ~280 kg</span>
 				</div>
 			</div>
 			<div className={styles.col}>
@@ -80,9 +80,9 @@ const PrinterTab: React.FC = () => {
 				</div>
 				<div className={styles.details}>
 					<h3>{t("printer.tabs.printer.volume")}</h3>
-					<span>{t("printer.tabs.printer.width")}: 1325 mm</span>
-					<span>{t("printer.tabs.printer.depth")}: 900 mm</span>
-					<span>{t("printer.tabs.printer.height")}: 2000 mm</span>
+					<span>{t("printer.tabs.printer.width")}: 400 mm</span>
+					<span>{t("printer.tabs.printer.depth")}: 450 mm</span>
+					<span>{t("printer.tabs.printer.height")}: 400 mm</span>
 				</div>
 			</div>
 			<div className={styles.col}>

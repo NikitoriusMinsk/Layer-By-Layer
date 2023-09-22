@@ -32,37 +32,37 @@
 	"printer": {
 		"tabs": {
 			"printer": {
-				"heading": "printer",
+				"heading": "3D Принтер",
 				"img": "alt",
-				"dimensions": "dimensions",
-				"volume": "volume",
-				"width": "width",
-				"depth": "depth",
-				"height": "height",
-				"weight": "weight",
+				"dimensions": "Размер",
+				"volume": "Объём",
+				"width": "Ширина",
+				"depth": "Глубина",
+				"height": "Высота",
+				"weight": "Вес",
 				"process": {
-					"heading": "heading",
-					"text": "text"
+					"heading": "Процесс печати",
+					"text": "Производство плавленых нитей, армирование непрерывным волокном"
 				},
 				"resolution": {
-					"heading": "heading",
-					"text": "text"
+					"heading": "Разрешение оси Z",
+					"text": "100 μm - 300 μm"
 				},
 				"media": {
-					"heading": "heading",
-					"text": "text"
+					"heading": "Материалы для печати",
+					"text": "Полимерная нить, непрерывные волокна"
 				},
 				"geometry": {
-					"heading": "heading",
-					"text": "text"
+					"heading": "Внутренняя геометрия детали",
+					"text": "Заполнение с закрытыми порами и армированием непрерывным волокном"
 				},
 				"bed": {
-					"heading": "heading",
-					"text": "text"
+					"heading": "Рабочий стол",
+					"text": "Прецизионный обработанный алюминий"
 				}
 			},
 			"materials": {
-				"heading": "materials",
+				"heading": "Совместимые материалы",
 				"1": "ABS",
 				"2": "PLA",
 				"3": "HIPS",
@@ -71,7 +71,7 @@
 				"6": "Composite"
 			},
 			"details": {
-				"heading": "details",
+				"heading": "Подробности о системе",
 				"text": {
 					"1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit qui maiores voluptatum consectetur praesentium quidem, animi, repellendus hic neque excepturi molestias ullam perferendis consequatur sed, mollitia esse illum numquam. Libero?",
 					"2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit qui maiores voluptatum consectetur praesentium quidem, animi, repellendus hic neque excepturi molestias ullam perferendis consequatur sed, mollitia esse illum numquam. Libero?",
