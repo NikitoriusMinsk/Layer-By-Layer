@@ -118,7 +118,6 @@ const ContactMap: React.FC = () => {
 						scrollwheel: true, // allow scroll wheel
 					}}
 				>
-					{/* Child components, such as markers, info windows, etc. */}
 					<Marker
 						position={{
 							lat: 52.2305721,
