@@ -10,6 +10,7 @@
 		flex-direction: row;
 		justify-content: space-around;
 		margin-bottom: 4.75rem;
+		height: max-content;
 
 		.trigger {
 			width: 100%;
@@ -130,6 +131,11 @@
 
 @media screen and (max-width: 425px) {
 	.container {
+		.list {
+			margin-bottom: 12px;
+			flex-wrap: wrap;
+		}
+
 		.tab {
 			&.printer {
 				.col:nth-child(1),

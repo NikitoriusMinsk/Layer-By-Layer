@@ -2,28 +2,32 @@
 	display: flex;
 	flex-direction: column;
 	gap: 48px;
+	padding: 0 var(--side-margin);
+	border-radius: 18px;
 
 	.headings {
-		padding: 0 var(--side-margin);
-
 		h3 {
 			opacity: 40%;
 		}
 	}
 
 	.map {
+		display: flex;
+		flex-direction: column;
 		position: relative;
 
 		.overlay {
 			position: absolute;
 			z-index: 1;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-end;
+			width: 100%;
 
-			&.details {
+			.details {
 				padding: 12px 48px;
-				right: var(--side-margin);
-				top: 50px;
 				min-height: calc(100% - 100px);
-				min-width: 350px;
 				background-color: rgb(32 34 42 / 40%);
 				backdrop-filter: blur(10px);
 				border-radius: 18px;
@@ -51,9 +55,7 @@
 				}
 			}
 
-			&.socials {
-				bottom: 50px;
-				left: var(--side-margin);
+			.socials {
 				display: flex;
 				flex-direction: row;
 				gap: 24px;
@@ -86,6 +88,64 @@
 					.arrow {
 						height: 16px;
 						width: 16px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		.map {
+			.overlay {
+				align-items: center;
+
+				.socials {
+					flex-direction: column;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.container {
+		.map {
+			gap: 24px;
+
+			> div:first-child {
+				height: 400px !important;
+			}
+
+			.overlay {
+				position: relative;
+				flex-direction: column;
+				gap: 24px;
+
+				.socials {
+					flex-direction: row;
+					flex-wrap: wrap;
+
+					.button {
+						flex: 1;
+						justify-content: space-between;
+					}
+				}
+
+				.details {
+					width: 100%;
+					padding: 24px;
+					min-height: unset;
+
+					> div {
+						flex-direction: row;
+						flex-wrap: wrap;
+						justify-content: space-between;
+
+						div {
+							flex: 1;
+						}
 					}
 				}
 			}

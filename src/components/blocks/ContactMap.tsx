@@ -38,73 +38,6 @@ const ContactMap: React.FC = () => {
 			</div>
 
 			<div className={styles.map}>
-				<div className={`${styles.overlay} ${styles.details}`}>
-					<div>
-						<div>
-							<h3>{t("map.working_hours.heading")}</h3>
-							<p>{t("map.working_hours.weekdays.days")}</p>
-							<p>{t("map.working_hours.weekdays.time")}</p>
-							<p>{t("map.working_hours.weekends.days")}</p>
-							<p>{t("map.working_hours.weekends.time")}</p>
-						</div>
-						<div>
-							<h3>{t("map.address.heading")}</h3>
-							<p>{t("map.address.line1")}</p>
-							<p>{t("map.address.line2")}</p>
-						</div>
-						<div>
-							<h3>{t("map.support.heading")}</h3>
-							<p>howchange@gmail.com</p>
-							<p>{t("map.support.phone")}</p>
-						</div>
-					</div>
-				</div>
-				<div className={`${styles.overlay} ${styles.socials}`}>
-					<Link
-						href="https://telegram.com"
-						className={styles.button}
-					>
-						<FaTelegram className={styles.image} />
-						<div className={styles.info}>
-							<span>Telegram</span>
-							<span>@telegram</span>
-						</div>
-						<FaAngleRight className={styles.arrow} />
-					</Link>
-					<Link
-						href="https://whatsapp.com"
-						className={styles.button}
-					>
-						<FaWhatsapp className={styles.image} />
-						<div className={styles.info}>
-							<span>WhatsApp</span>
-							<span>@whatsapp</span>
-						</div>
-						<FaAngleRight className={styles.arrow} />
-					</Link>
-					<Link
-						href="https://facebook.com"
-						className={styles.button}
-					>
-						<FaFacebook className={styles.image} />
-						<div className={styles.info}>
-							<span>Messenger</span>
-							<span>@facebook</span>
-						</div>
-						<FaAngleRight className={styles.arrow} />
-					</Link>
-					<Link
-						href="https://instagram.com"
-						className={styles.button}
-					>
-						<FaInstagram className={styles.image} />
-						<div className={styles.info}>
-							<span>Instagram</span>
-							<span>@instagram</span>
-						</div>
-						<FaAngleRight className={styles.arrow} />
-					</Link>
-				</div>
 				<GoogleMap
 					mapContainerStyle={containerStyle}
 					center={center}
@@ -125,6 +58,75 @@ const ContactMap: React.FC = () => {
 						}}
 					/>
 				</GoogleMap>
+				<div className={styles.overlay}>
+					<div className={`${styles.socials}`}>
+						<Link
+							href="https://telegram.com"
+							className={styles.button}
+						>
+							<FaTelegram className={styles.image} />
+							<div className={styles.info}>
+								<span>Telegram</span>
+								<span>@telegram</span>
+							</div>
+							<FaAngleRight className={styles.arrow} />
+						</Link>
+						<Link
+							href="https://whatsapp.com"
+							className={styles.button}
+						>
+							<FaWhatsapp className={styles.image} />
+							<div className={styles.info}>
+								<span>WhatsApp</span>
+								<span>@whatsapp</span>
+							</div>
+							<FaAngleRight className={styles.arrow} />
+						</Link>
+						<Link
+							href="https://facebook.com"
+							className={styles.button}
+						>
+							<FaFacebook className={styles.image} />
+							<div className={styles.info}>
+								<span>Messenger</span>
+								<span>@facebook</span>
+							</div>
+							<FaAngleRight className={styles.arrow} />
+						</Link>
+						<Link
+							href="https://instagram.com"
+							className={styles.button}
+						>
+							<FaInstagram className={styles.image} />
+							<div className={styles.info}>
+								<span>Instagram</span>
+								<span>@instagram</span>
+							</div>
+							<FaAngleRight className={styles.arrow} />
+						</Link>
+					</div>
+					<div className={`${styles.details}`}>
+						<div>
+							<div>
+								<h3>{t("map.working_hours.heading")}</h3>
+								<p>{t("map.working_hours.weekdays.days")}</p>
+								<p>{t("map.working_hours.weekdays.time")}</p>
+								<p>{t("map.working_hours.weekends.days")}</p>
+								<p>{t("map.working_hours.weekends.time")}</p>
+							</div>
+							<div>
+								<h3>{t("map.address.heading")}</h3>
+								<p>{t("map.address.line1")}</p>
+								<p>{t("map.address.line2")}</p>
+							</div>
+							<div>
+								<h3>{t("map.support.heading")}</h3>
+								<p>howchange@gmail.com</p>
+								<p>{t("map.support.phone")}</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

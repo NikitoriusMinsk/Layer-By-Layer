@@ -45,3 +45,13 @@
 		}
 	}
 }
+
+@media screen and (max-width: 425px) {
+	.container {
+		.content {
+			button {
+				padding: 12px 110px;
+			}
+		}
+	}
+}
