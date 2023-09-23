@@ -122,7 +122,6 @@ const MaterialsTab: React.FC = () => {
 			<span>{t("printer.tabs.materials.3")}</span>
 			<span>{t("printer.tabs.materials.4")}</span>
 			<span>{t("printer.tabs.materials.5")}</span>
-			<span>{t("printer.tabs.materials.6")}</span>
 		</div>
 	);
 };
