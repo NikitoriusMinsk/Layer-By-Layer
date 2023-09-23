@@ -33,6 +33,19 @@
 		--ring: 222.2 84% 4.9%;
 
 		--radius: 0.5rem;
+		--primary: #5b5dff;
+		--primary-transparent: rgba(91, 93, 255, 0.1);
+		--primary-2: #fde3eb;
+		--secondary: #20222a;
+		--secondary-2: #292b37;
+		--selection: var(--cyan);
+		--text-base: #4d515d;
+		--p: #4d515d;
+		--text-primary: #5b5dff;
+		--text-secondary: white;
+		--hover: rgba(0, 0, 0, 0.075);
+		--hover-1: rgba(91, 93, 255, 0.39);
+		--hover-2: rgba(0, 0, 0, 0.25);
 	}
 
 	.dark {
@@ -63,6 +76,19 @@
 		--border: 217.2 32.6% 17.5%;
 		--input: 217.2 32.6% 17.5%;
 		--ring: 212.7 26.8% 83.9%;
+		--primary: #5b5dff;
+		--primary-transparent: rgba(91, 93, 255, 0.1);
+		--primary-2: #fde3eb;
+		--secondary: #20222a;
+		--secondary-2: #292b37;
+		--selection: var(--cyan);
+		--text-base: #4d515d;
+		--p: #4d515d;
+		--text-primary: #5b5dff;
+		--text-secondary: white;
+		--hover: rgba(0, 0, 0, 0.075);
+		--hover-1: rgba(91, 93, 255, 0.39);
+		--hover-2: rgba(0, 0, 0, 0.25);
 	}
 }
 

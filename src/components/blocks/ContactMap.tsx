@@ -25,7 +25,7 @@ const ContactMap: React.FC = () => {
 	const { t } = useTranslation("common");
 	const { isLoaded } = useJsApiLoader({
 		id: "google-map-script",
-		googleMapsApiKey: "AIzaSyCVoXDMqKRW7_9QbJgK7Y3srlvetZOlsFg",
+		googleMapsApiKey: "AIzaSyCZwd_3EysG8mU3qcaNcvwd1yJZ69sIviY",
 	});
 
 	if (!isLoaded) return <></>;

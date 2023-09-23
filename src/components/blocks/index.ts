@@ -8,3 +8,6 @@ export { default as Sample } from "./Sample";
 export { default as Services } from "./Services";
 export { default as FAQ } from "./FAQ";
 export { default as ContactMap } from "./ContactMap";
+export { default as Contacts } from "./Contacts";
+export { default as SocialButtons } from "./SocialButtons";
+export { default as Container } from "./Container";

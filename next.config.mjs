@@ -3,6 +3,7 @@
  * for Docker builds.
 */
 await import("./src/env.mjs");
+
 import i18nConfig from "./next-i18next.config.cjs";
 const { i18n } = i18nConfig
 
@@ -12,7 +13,7 @@ process.env.I18NEXT_DEFAULT_CONFIG_PATH = `./next-i18next.config.cjs`;
 /** @type {import("next").NextConfig} */
 const config = {
     reactStrictMode: false,
-
+  
     /**
      * If you have `experimental: { appDir: true }` set, then you must comment the below `i18n` config
      * out.

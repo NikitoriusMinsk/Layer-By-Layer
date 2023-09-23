@@ -30,5 +30,19 @@
 		"**/*.cjs",
 		"**/*.mjs"
 	],
+	"paths": {
+		"@/*": ["./*"],
+		"@components/common/*": ["components/common/*"],
+		"@components/*": ["components/*"],
+		"@utils/*": ["utils/*"],
+		"@lib/*": ["lib/*"],
+		"@config/*": ["config/*"],
+		"@assets/*": ["assets/*"],
+		"@public": ["../public"],
+		"@public/*": ["../public/*"],
+		"/*": ["./*"],
+		"components/common/*": ["components/common/*"],
+		"components/*": ["components/*"],
+	  },
 	"exclude": ["node_modules"]
 }
