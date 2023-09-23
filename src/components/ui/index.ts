@@ -9,6 +9,3 @@ export {
 	AccordionTrigger,
 } from "./Accordion";
 export { Tabs, TabsContent, TabsList, TabsTrigger } from "./Tabs";
-export { default as Button } from "./Button";
-export { default as Text } from "./Text";
-export { default as LoadingDots } from "./LoadingDots";
