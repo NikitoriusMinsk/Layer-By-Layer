@@ -180,6 +180,7 @@
 	"map": {
 		"heading": "contact",
 		"subheading": "subheading",
+		"openMaps": "open",
 		"working_hours": {
 			"heading": "heading",
 			"weekdays": {

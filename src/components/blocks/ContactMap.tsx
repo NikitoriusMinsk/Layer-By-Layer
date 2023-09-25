@@ -12,8 +12,8 @@ import {
 import Link from "next/link";
 
 const center = {
-	lat: 52.2305721,
-	lng: 21.0099381,
+	lat: 53.90086499206687,
+	lng: 27.54199778042135,
 };
 
 const containerStyle = {
@@ -41,6 +41,7 @@ const ContactMap: React.FC = () => {
 			</div>
 
 			<div className={styles.map}>
+				<button className={styles.openMaps}>{t("map.openMaps")}</button>
 				<GoogleMap
 					mapContainerStyle={containerStyle}
 					center={center}
@@ -54,12 +55,7 @@ const ContactMap: React.FC = () => {
 						scrollwheel: true, // allow scroll wheel
 					}}
 				>
-					<Marker
-						position={{
-							lat: 52.2305721,
-							lng: 21.0099381,
-						}}
-					/>
+					<Marker position={center} />
 				</GoogleMap>
 				<div className={styles.overlay}>
 					<div className={`${styles.socials}`}>
