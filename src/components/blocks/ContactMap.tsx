@@ -12,8 +12,8 @@ import {
 import Link from "next/link";
 
 const center = {
-	lat: 53.90086499206687,
-	lng: 27.54199778042135,
+	lat: 53.94616033614426,
+	lng: 27.617972612231906,
 };
 
 const containerStyle = {
@@ -41,7 +41,13 @@ const ContactMap: React.FC = () => {
 			</div>
 
 			<div className={styles.map}>
-				<button className={styles.openMaps}>{t("map.openMaps")}</button>
+				<Link
+					href="https://maps.app.goo.gl/fhRPua5cDZs956b67"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<button className={styles.openMaps}>{t("map.openMaps")}</button>
+				</Link>
 				<GoogleMap
 					mapContainerStyle={containerStyle}
 					center={center}
