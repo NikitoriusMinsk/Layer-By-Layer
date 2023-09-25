@@ -199,15 +199,15 @@
 	"map": {
 		"heading": "Let us know about your project!",
 		"subheading": "Сontact us and bring your ideas to life!",
-		"openMaps": "open",
+		"openMaps": "Open on Google",
 		"working_hours": {
-			"heading": "heading",
+			"heading": "Working Hours",
 			"weekdays": {
 				"days": "Mon - Fri",
 				"time": "10am - 10pm"
 			},
 			"weekends": {
-				"days": "Sa-Su",
+				"days": "Sat-Sun",
 				"time": "closed"
 			}
 		},
@@ -218,8 +218,8 @@
 		},
 		"support": {
 			"heading": "24/7 support",
-			"phone": "+133785648244",
-			"email": "email"
+			"phone": "+375296999690",
+			"email": "arcostrade@gmail.com"
 		}
 	}
 }
