@@ -4,6 +4,7 @@
 	align-items: center;
 
 	.image {
+		max-width: 700px;
 		* {
 			fill: var(--decorative-element-color);
 		}
@@ -22,7 +23,7 @@
 		gap: 52px;
 
 		> text {
-			line-height: 20px;
+			line-height: 30px;
 		}
 
 		button {
