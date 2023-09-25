@@ -60,7 +60,7 @@ const ContactMap: React.FC = () => {
 				<div className={styles.overlay}>
 					<div className={`${styles.socials}`}>
 						<Link
-							href="https://telegram.com"
+							href="https://t.me/+375296999690"
 							className={styles.button}
 							target="_blank"
 							rel="noopener noreferrer"
@@ -72,7 +72,7 @@ const ContactMap: React.FC = () => {
 							</div>
 							<FaAngleRight className={styles.arrow} />
 						</Link>
-						<Link
+						{/* <Link
 							href="https://whatsapp.com"
 							className={styles.button}
 							target="_blank"
@@ -110,7 +110,7 @@ const ContactMap: React.FC = () => {
 								<span>@instagram</span>
 							</div>
 							<FaAngleRight className={styles.arrow} />
-						</Link>
+						</Link> */}
 					</div>
 					<div className={`${styles.details}`}>
 						<div>
