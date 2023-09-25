@@ -1,16 +1,16 @@
 {
 	"logo_alt": "logo_alt",
-	"slogan": "slogan",
+	"slogan": "Bring your ideas to life with our 3D printing!",
 	"hours": {
-		"heading": "heading",
-		"text": "text"
+		"heading": "Working hours",
+		"text": "9:00 - 19:00"
 	},
-	"about": "about",
-	"fdm_printing": "fdm_printing",
-	"services": "services",
-	"sample": "sample",
-	"algorithm": "algorithm",
-	"order": "order",
-	"contact": "contact",
-	"partnership": "partnership"
+	"about": "About Us",
+	"fdm_printing": "FDM printing",
+	"services": "Services",
+	"sample": "Sample",
+	"algorithm": "Fulfillment Algorithm",
+	"order": "Contact",
+	"contact": "We are on social media networks",
+	"partnership": "Partnership"
 }

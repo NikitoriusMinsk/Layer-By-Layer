@@ -1,77 +1,76 @@
 {
 	"hero": {
-		"heading": "heading",
-		"text": "text",
+		"heading": "3DNAtor MAX",
+		"text": "Create unique products using advanced 3D printing technologies. Innovate your business!",
 		"quote": "quote",
-		"contact": "contact"
+		"contact": "Contact us"
 	},
 	"about": {
-		"heading": "heading",
+		"heading": "About us",
 		"1": {
 			"alt": "alt",
-			"title": "title",
-			"text": "text"
+			"title": "Individual Approach to Each Customer",
+			"text": "We offer our customers an individual approach to every project. Our team of professional designers and engineers works on each order to create a product that precisely meets the needs and desires of our clients"
 		},
 		"2": {
 			"alt": "alt",
-			"title": "title",
-			"text": "text"
+			"title": "Quality and Prompt Order Fulfillment",
+			"text": "We guarantee high-quality products and swift order processing. Our products undergo rigorous quality control to ensure compliance with industry standards. We also process orders quickly to ensure our clients receive their products in the shortest possible time"
 		},
 		"3": {
 			"alt": "alt",
-			"title": "title",
-			"text": "text"
+			"title": "Flexible Collaboration Terms",
+			"text": "We provide flexible collaboration terms, allowing our clients to obtain high-quality products at optimal prices. We are also ready to discuss various payment and delivery options to make our cooperation as convenient as possible for our clients"
 		}
 	},
 	"fdm_printing": {
 		"alt": "alt",
-		"heading": "heading",
-		"text": "text",
-		"button": "button"
+		"heading": "FDM-3D printing",
+		"text": "Fused Deposition Modeling (FDM) 3D printing is one of the most common and accessible 3D printing technologies. It is based on the method of extruding plastic material through a nozzle, layer by layer, until the desired shape is created. Our 3D printers offer high precision and detail, allowing the production of objects of varying complexity, including prototypes, spare parts, unique designer items, and much more. FDM-3D printing is also known for its speed and reliability, making it ideal for small and medium production runs. Our team of professionals is ready to assist you in realizing projects of any complexity using FDM-3D printing technology.",
+		"button": "Contact us"
 	},
 	"printer": {
 		"tabs": {
 			"printer": {
-				"heading": "printer",
+				"heading": "Printer",
 				"img": "alt",
-				"dimensions": "dimensions",
-				"volume": "volume",
-				"width": "width",
-				"depth": "depth",
-				"height": "height",
-				"weight": "weight",
+				"dimensions": "Dimensions",
+				"volume": "Volume",
+				"width": "Width",
+				"depth": "Depth",
+				"height": "Height",
+				"weight": "Weight",
 				"process": {
-					"heading": "heading",
-					"text": "text"
+					"heading": "Printing process",
+					"text": "Fused Filament Fabrication, Continuous Fiber Reinforcement"
 				},
 				"resolution": {
-					"heading": "heading",
-					"text": "text"
+					"heading": "Z Layer Resolution",
+					"text": "100 μm - 300 μm"
 				},
 				"media": {
-					"heading": "heading",
-					"text": "text"
+					"heading": "Printing Media",
+					"text": "Polymer Filament, Continuous Fibers"
 				},
 				"geometry": {
-					"heading": "heading",
-					"text": "text"
+					"heading": "Internal Part Geometry",
+					"text": "Closed Cell Infill with Continuous Fiber Reinforcement"
 				},
 				"bed": {
-					"heading": "heading",
-					"text": "text"
+					"heading": "Print Bed",
+					"text": "Precision Machined Aluminum"
 				}
 			},
 			"materials": {
-				"heading": "materials",
-				"1": "ABS",
-				"2": "PLA",
+				"heading": "Materials",
+				"1": "ABS, ABS-AR",
+				"2": "PLA, POM, PPS, PPS-CF, PPS-GF",
 				"3": "HIPS",
-				"4": "PA-6",
-				"5": "Pa-12",
-				"6": "Composite"
+				"4": "PA-6, Pa-12",
+				"5": "TPU-GF, TPU-CF"
 			},
 			"details": {
-				"heading": "details",
+				"heading": "Details",
 				"text": {
 					"1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit qui maiores voluptatum consectetur praesentium quidem, animi, repellendus hic neque excepturi molestias ullam perferendis consequatur sed, mollitia esse illum numquam. Libero?",
 					"2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit qui maiores voluptatum consectetur praesentium quidem, animi, repellendus hic neque excepturi molestias ullam perferendis consequatur sed, mollitia esse illum numquam. Libero?",
@@ -83,49 +82,69 @@
 		}
 	},
 	"services": {
-		"heading": "heading",
+		"heading": "Our services",
 		"1": {
 			"alt": "alt",
-			"text": "text",
-			"title": "title"
+			"text": "Our company offers 3D printing services to create unique and high-quality models. We utilize cutting-edge technologies and materials to achieve the best results.",
+			"title": "3D printing"
 		},
 		"2": {
 			"alt": "alt",
-			"text": "text",
-			"title": "title"
+			"text": "Our company provides custom 3D printer ordering and manufacturing services for various needs. We work with the most advanced technologies and materials to create a printer tailored to your requirements.",
+			"title": "Custom printers"
 		},
 		"3": {
 			"alt": "alt",
-			"text": "text",
-			"title": "title"
+			"text": "Our company offers 3D modeling training services. Our experienced instructors will teach you to create professional models using the latest tools and software.",
+			"title": "3D modeling training"
 		}
 	},
 	"sample": {
-		"heading": "heading",
-		"text": "text",
-		"button": "button"
+		"heading": "Free Sample Printing",
+		"text": "We offer complimentary printing of one sample for large orders, allowing you to assess the quality of our products before mass production. Our goal is to provide you with high-quality products at the best price, so we are ready to offer additional recommendations to ensure you receive the highest quality products.",
+		"button": "Contact us"
 	},
 	"algorithm": {
-		"heading": "heading",
+		"heading": "Order Fulfillment Algorithm",
 		"1": {
 			"alt": "alt",
-			"text": "text",
-			"title": "title"
+			"text": "You submit a printing request through our website, email, or messenger",
+			"title": "1. Order Placement"
 		},
 		"2": {
 			"alt": "alt",
-			"text": "text",
-			"title": "title"
+			"text": "Our manager contacts you to discuss project details",
+			"title": "2. Consultation"
 		},
 		"3": {
 			"alt": "alt",
-			"text": "text",
-			"title": "title"
+			"text": "You provide the printing files or request design services from our specialists",
+			"title": "3. File Preparation"
 		},
 		"4": {
 			"alt": "alt",
-			"text": "text",
-			"title": "title"
+			"text": "We check the files for print readiness and notify you of any detected errors",
+			"title": "4. File Verification"
+		},
+		"5": {
+			"alt": "alt",
+			"text": "We select the optimal material and proceed with 3D printing",
+			"title": "5. Printing"
+		},
+		"6": {
+			"alt": "alt",
+			"text": "We inspect the print quality and rectify any flaws",
+			"title": "6. Quality Control"
+		},
+		"7": {
+			"alt": "alt",
+			"text": "We perform necessary post-processing on the products",
+			"title": "7. Post-processing"
+		},
+		"8": {
+			"alt": "alt",
+			"text": "We deliver the required components to you",
+			"title": "8. Delivery"
 		}
 	},
 	"partnership": {
@@ -143,27 +162,27 @@
 		"alt": "alt"
 	},
 	"faq": {
-		"heading": "heading",
-		"subheading": "subheading",
-		"socialLink": "socials",
+		"heading": "FAQ",
+		"subheading": "You can always ask your questions in our",
+		"socialLink": "social networks",
 		"questions": {
-			"1": "question",
-			"2": "question",
-			"3": "question",
-			"4": "question",
-			"5": "question"
+			"1": "What are the advantages of 3D printing for industrial enterprises?",
+			"2": "Which type of 3D printing is best suited for my project?",
+			"3": "What materials can be used in 3D printing?",
+			"4": "How long does it take to 3D print one object?",
+			"5": "What are the cost and process of ordering 3D printing?"
 		},
 		"answers": {
-			"1": "answer",
-			"2": "answer",
-			"3": "answer",
-			"4": "answer",
-			"5": "answer"
+			"1": "3D printing in the industry enables rapid prototyping, reduces the time from idea to production, and minimizes material waste.",
+			"2": "The choice depends on the requirements: FDM for prototypes, SLA for highly detailed parts, SLS for functional components.",
+			"3": "We use ABS, PLA, HIPS, PA-6, Pa-1, POM, PPS, PPS-CF, PPS-GF, TPU-GF, TPU-CF, ABS-AR, basf metalfuse and composite materials based on them.",
+			"4": "The time varies based on size, complexity, and method, ranging from a few hours to several days.",
+			"5": "Costs depend on the object and method. The order begins with providing a 3D model and project assessment."
 		}
 	},
 	"contact": {
-		"heading": "heading",
-		"text": "text",
+		"heading": "Let us know about your project!",
+		"text": "Сontact us and turn your ideas into reality!",
 		"placeholder": {
 			"name": "name",
 			"phone": "phone",
@@ -178,8 +197,8 @@
 		"submit": "submit"
 	},
 	"map": {
-		"heading": "contact",
-		"subheading": "subheading",
+		"heading": "Let us know about your project!",
+		"subheading": "Сontact us and bring your ideas to life!",
 		"openMaps": "open",
 		"working_hours": {
 			"heading": "heading",
@@ -188,17 +207,17 @@
 				"time": "10am - 10pm"
 			},
 			"weekends": {
-				"days": "wekends",
+				"days": "Sa-Su",
 				"time": "closed"
 			}
 		},
 		"address": {
-			"heading": "address",
-			"line1": "pupkina 12",
-			"line2": "zalupkina 3"
+			"heading": "Address",
+			"line1": "Minsk 220004, Belarus",
+			"line2": "st. Shornaya 20"
 		},
 		"support": {
-			"heading": "support",
+			"heading": "24/7 support",
 			"phone": "+133785648244",
 			"email": "email"
 		}
