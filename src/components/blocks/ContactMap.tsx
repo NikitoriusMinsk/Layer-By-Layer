@@ -62,6 +62,8 @@ const ContactMap: React.FC = () => {
 						<Link
 							href="https://telegram.com"
 							className={styles.button}
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							<FaTelegram className={styles.image} />
 							<div className={styles.info}>
@@ -73,6 +75,8 @@ const ContactMap: React.FC = () => {
 						<Link
 							href="https://whatsapp.com"
 							className={styles.button}
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							<FaWhatsapp className={styles.image} />
 							<div className={styles.info}>
@@ -84,6 +88,8 @@ const ContactMap: React.FC = () => {
 						<Link
 							href="https://facebook.com"
 							className={styles.button}
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							<FaFacebook className={styles.image} />
 							<div className={styles.info}>
@@ -95,6 +101,8 @@ const ContactMap: React.FC = () => {
 						<Link
 							href="https://instagram.com"
 							className={styles.button}
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							<FaInstagram className={styles.image} />
 							<div className={styles.info}>
