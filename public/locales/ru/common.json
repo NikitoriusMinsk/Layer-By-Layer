@@ -32,7 +32,7 @@
 	"printer": {
 		"tabs": {
 			"printer": {
-				"heading": "3D Принтер",
+				"heading": "Принтер",
 				"img": "alt",
 				"dimensions": "Размер",
 				"volume": "Объём",
@@ -62,7 +62,7 @@
 				}
 			},
 			"materials": {
-				"heading": "Совместимые материалы",
+				"heading": "Материалы",
 				"1": "ABS, ABS-AR",
 				"2": "PLA, POM, PPS, PPS-CF, PPS-GF",
 				"3": "HIPS",
@@ -70,7 +70,7 @@
 				"5": "TPU-GF, TPU-CF"
 			},
 			"details": {
-				"heading": "Подробности о системе",
+				"heading": "Подробности",
 				"text": {
 					"1": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit qui maiores voluptatum consectetur praesentium quidem, animi, repellendus hic neque excepturi molestias ullam perferendis consequatur sed, mollitia esse illum numquam. Libero?",
 					"2": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit qui maiores voluptatum consectetur praesentium quidem, animi, repellendus hic neque excepturi molestias ullam perferendis consequatur sed, mollitia esse illum numquam. Libero?",
@@ -175,7 +175,7 @@
 		"answers": {
 			"1": "3D-печать в промышленности обеспечивает быстрое прототипирование, сокращает время от идеи до производства и снижает отходы материалов.",
 			"2": "Выбор зависит от требований: FDM для прототипов, SLA для деталей с детализацией, SLS для функциональных деталей.",
-			"3": "Мы используем ABS, PLA, HIPS, PA-6, Pa-1 и композитные материалы на их основе",
+			"3": "Мы используем ABS, PLA, HIPS, PA-6, Pa-1, POM, PPS, PPS-CF, PPS-GF, TPU-GF, TPU-CF, ABS-AR, basf metalfuse и композитные материалы на их основе",
 			"4": "Время зависит от размера, сложности и метода - от нескольких часов до нескольких дней.",
 			"5": "Стоимость зависит от объекта и метода, заказ начинается с предоставления 3D-модели и оценки проекта."
 		}
