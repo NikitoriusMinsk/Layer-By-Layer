@@ -81,7 +81,7 @@ function Map() {
 	};
 	const { isLoaded } = useJsApiLoader({
 		id: "google-map-script",
-		googleMapsApiKey: "AIzaSyCVoXDMqKRW7_9QbJgK7Y3srlvetZOlsFg",
+		googleMapsApiKey: "",
 	});
 
 	const [map, setMap] = useState(null);
